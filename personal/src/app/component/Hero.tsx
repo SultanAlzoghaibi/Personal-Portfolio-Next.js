@@ -4,6 +4,7 @@ import BackgroundVid1 from "./backgroundvid1";
 import { Inter } from "next/font/google";
 import { TextGenerateEffect } from "./ui/TextGenerateEffect";
 import { Saira_Stencil_One } from "next/font/google";
+import Magicbutton from "./Magicbutton";
 
 const stencilFont = Saira_Stencil_One({
   variable: "--font-saira",
@@ -57,6 +58,7 @@ const Hero = () => {
             Science student ^_^
           </p>
         </div>
+        <Magicbutton />
   
       </div>
     </div>
