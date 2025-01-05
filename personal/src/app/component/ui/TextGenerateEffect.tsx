@@ -2,6 +2,14 @@
 import { useEffect } from "react";
 import { motion, stagger, useAnimate } from "framer-motion";
 import { cn } from "@/lib/utils";
+import { Saira_Stencil_One } from "next/font/google";
+
+const stencilFont = Saira_Stencil_One({
+  variable: "--font-saira",
+  subsets: ["latin"],
+  display: "swap",
+  weight: "400", // Ensure the correct weight is applied
+});
 
 export const TextGenerateEffect = ({
   words,
@@ -15,7 +23,10 @@ export const TextGenerateEffect = ({
   duration?: number;
 }) => {
   const [scope, animate] = useAnimate();
-  let wordsArray = words.split(" ");
+
+  // Ensure that words is always a string
+  const wordsArray = (typeof words === 'string' ? words : '').split(" ");
+
   useEffect(() => {
     animate(
       "span",
@@ -34,10 +45,16 @@ export const TextGenerateEffect = ({
     return (
       <motion.div ref={scope}>
         {wordsArray.map((word, idx) => {
+          const isWhite = idx < 4; // First 4 words
           return (
             <motion.span
               key={word + idx}
-              className="dark:text-white text-black opacity-0"
+              className={`${stencilFont.className} ${
+                isWhite ? "text-white" : "text-primary"
+              }`}
+              initial={{ opacity: 0 }} // Ensure initial opacity is 0
+              animate={{ opacity: 1 }} // Animate opacity to 1
+              transition={{ delay: idx * 0.2, duration: duration }}
               style={{
                 filter: filter ? "blur(10px)" : "none",
               }}
@@ -51,9 +68,9 @@ export const TextGenerateEffect = ({
   };
 
   return (
-    <div className={cn("font-bold", className)}>
-      <div className="mt-4">
-        <div className=" dark:text-white text-black text-2xl leading-snug tracking-wide">
+    <div className={cn(`font-bold`, className)}>
+      <div className="my-4">
+        <div className="flex">
           {renderWords()}
         </div>
       </div>
