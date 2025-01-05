@@ -22,6 +22,7 @@ export default {
       },
       fontFamily: {
         saira: ['"Saira Stencil One"', "sans-serif"],
+        stencil: ['"Stencil Std Bold"', 'sans-serif'],
       },
     },
   },
