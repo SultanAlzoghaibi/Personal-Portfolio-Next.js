@@ -8,6 +8,10 @@ export default function Home() {
   return (
     <>
       <Hero />
+      <div className="my-40">
+        <br />
+      </div>
+      
 
       {/* Future Elements */}
       <div className="relative z-10">

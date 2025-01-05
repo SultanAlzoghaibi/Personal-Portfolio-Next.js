@@ -31,37 +31,37 @@ const Hero = () => {
   }, []);
 
   return (
-    <div>
-      <BackgroundVid1 />
-      
-      {/* Outer container to move both elements away from the left */}
-      <div className="absolute inset-0 flex items-start justify-start pt-20 pl-[50px] overflow-visible">
-        
-        {/* Title text with generate effect */}
-        <TextGenerateEffect
-          className={`font-stencil text-[70px] font-extrabold leading-none absolute max-w-[750px] min-w-[749px]`}
-          words="Welcome to my site! Sultan Alzoghaibi"
-        />
-        
-        <br />
-        <br />
-  
-        {/* Smaller text underneath with fade-in effect */}
-        <div
-          className={`absolute top-[250px] left-5 max-w-[550px] mt-4 transition-opacity duration-1000 ${
-            fadeIn ? "opacity-100" : "opacity-0"
-          } bg-black bg-opacity-10 backdrop-blur-2xl p-4 rounded-md`}
-        >
-          <p className={`${interFont.className} text-lg text-white`}>
-            I'm a student at the University of Calgary, studying Natural Science with
-            a concentration in Computer Science. My goal is to graduate as a Computer
-            Science student ^_^
-          </p>
-        </div>
-        <Magicbutton />
-  
-      </div>
+    <div className="relative">
+  {/* Background video */}
+  <div className="absolute inset-0 -z-10">
+    <BackgroundVid1 />
+  </div>
+
+  {/* Content */}
+  <div className="relative flex flex-col items-start justify-start pt-20 pl-[50px]">
+    {/* Title text with generate effect */}
+    <TextGenerateEffect
+      className="font-stencil text-[70px] font-extrabold leading-none max-w-[750px] min-w-[749px]"
+      words="Welcome to my site! Sultan Alzoghaibi"
+    />
+
+    {/* Smaller text underneath with fade-in effect */}
+    <div
+      className={`max-w-[550px] transition-opacity duration-1000 ${
+        fadeIn ? "opacity-100" : "opacity-0"
+      } bg-black bg-opacity-10 backdrop-blur-2xl mb-4 `}
+    >
+      <p className={`${interFont.className} text-lg text-white p-btom-3`}>
+        I'm a student at the University of Calgary, studying Natural Science with
+        a concentration in Computer Science. My goal is to graduate as a Computer
+        Science student ^_^ !!!
+      </p>
     </div>
+
+    {/* Button */}
+    <Magicbutton />
+  </div>
+</div>
   );
 };
 
