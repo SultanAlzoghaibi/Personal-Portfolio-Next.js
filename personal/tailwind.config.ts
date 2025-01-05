@@ -11,6 +11,17 @@ export default {
       colors: {
         background: "var(--background)",
         foreground: "var(--foreground)",
+        primary: "#BE4A4A",
+        blackblack: "#141416",
+        lightblack: "#1B1C1E",
+        darkgrey: "#3F4349",
+        grey: "#8A8A8A",
+        white: "#FFFFFF",
+        secondary: "#889CE7",
+        "red-style": "#BE4A4A",
+      },
+      fontFamily: {
+        saira: ['"Saira Stencil One"', "sans-serif"],
       },
     },
   },
