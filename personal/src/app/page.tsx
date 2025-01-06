@@ -8,13 +8,20 @@ import  Grid  from "./component/Grid";
 export default function Home() {
   return (
     <>
-      <Hero />
-    
-     
-      <div className="my-40">
-        <br />
-      </div>
-      <Grid />
+      {/* Hero Section */}
+  <div className="relative">
+    <Hero />
+  </div>
+
+  {/* Spacer Between Sections */}
+  <div className="my-64"></div>
+
+  {/* Grid Section */}
+  <div className="container mx-auto px-4">
+    <Grid />
+  </div>
+
+
       <FloatingNav 
       className=""
       navItems={[

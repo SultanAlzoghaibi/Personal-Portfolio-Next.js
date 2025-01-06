@@ -56,7 +56,7 @@ const Hero = () => {
         a concentration in Computer Science. My goal is to graduate as a Computer
         Science student ^_^ !!!
       </p>
-      <Magicbutton />
+      <Magicbutton text="Contact me" />
     </div>
 
     {/* Button */}
