@@ -26,7 +26,7 @@ export default {
         stencil: ['"Stencil Std Bold"', 'sans-serif'],
       },
       animation: {
-        shimmer: "shimmer 2s linear infinite",
+        shimmer: "shimmer 6s  infinite",
       },
       keyframes: {
         shimmer: {
