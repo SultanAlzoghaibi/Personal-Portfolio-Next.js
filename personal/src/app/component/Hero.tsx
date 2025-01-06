@@ -54,7 +54,7 @@ const Hero = () => {
       <p className={`${interFont.className} text-lg text-white p-btom-4 mb-5`}>
         I'm a student at the University of Calgary, studying Natural Science with
         a concentration in Computer Science. My goal is to graduate as a Computer
-        Science student ^_^ !!!
+        Science student ^_^ !!!!
       </p>
       <Magicbutton text="Contact me" />
     </div>

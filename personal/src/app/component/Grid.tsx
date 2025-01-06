@@ -26,6 +26,6 @@ const grid = () => {
     </section>
   )
 }
-
+// comments 
 export default grid
 
