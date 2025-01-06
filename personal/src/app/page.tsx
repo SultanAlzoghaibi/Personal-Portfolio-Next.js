@@ -9,11 +9,12 @@ export default function Home() {
   return (
     <>
       <Hero />
-      <Grid />
+    
      
       <div className="my-40">
         <br />
       </div>
+      <Grid />
       <FloatingNav 
       className=""
       navItems={[
