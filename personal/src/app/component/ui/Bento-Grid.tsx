@@ -1,4 +1,7 @@
 import { cn } from "@/lib/utils";
+import { div, object } from "framer-motion/client";
+
+
 
 export const BentoGrid = ({
   className,
@@ -10,13 +13,34 @@ export const BentoGrid = ({
   return (
     <div
       className={cn(
-"grid grid-cols-1 md:grid-cols-6 lg:grid-cols-5 md:grid-row-7 gap-4 lg:gap-8 mx-auto", className
+        "grid grid-cols-1 md:grid-cols-6 lg:grid-cols-5 md:grid-row-7 gap-4 lg:gap-8 mx-auto",
+        className
       )}
     >
       {children}
     </div>
   );
 };
+
+const leftLists = [
+  { name: "HTML", icon: "tech-logos/HTML.png" },
+  { name: "CSS", icon: "tech-logos/CSS.webp" },
+  { name: "JavaScript", icon: "tech-logos/JavaScript.png" },
+  { name: "React", icon: "tech-logos/React.png" },
+  { name: "TailwindCSS", icon: "tech-logos/TailwindCSS.png" },
+  { name: "Next.js", icon: "tech-logos/Nextjs.png" },
+  { name: "MongoDB", icon: "tech-logos/MongoDB.png" },
+];
+
+const rightLists = [
+  { name: "Node.js", icon: "tech-logos/Node.png" },
+  { name: "TypeScript", icon: "tech-logos/TypeScript.png" },
+  { name: "Figma", icon: "tech-logos/Figma.png" },
+  { name: "Python", icon: "tech-logos/Python.png" },
+  { name: "Java", icon: "tech-logos/Java.png" },
+  { name: "Git", icon: "tech-logos/Git.png" },
+  { name: "API", icon: "tech-logos/API.png" }, // Assuming an "API" entry.
+];
 
 export const BentoGridItem = ({
   className,
@@ -40,19 +64,90 @@ export const BentoGridItem = ({
   return (
     <div
       className={cn(
-        "row-span-1 rounded-xl group/bento hover:shadow-xl transition duration-200 shadow-input dark:shadow-none p-4 border-[0.5px] border-[#4a4a4a] justify-between flex flex-col space-y-4",
+        "row-span-1 relative overflow-hidden rounded-3xl border border-white/[0.1] group/bento hover:shadow-xl transition duration-200 shadow-input dark:shadow-none justify-between flex flex-col space-y-4",
         className
       )}
       style={{
-        background: "linear-gradient(87deg, #1B1C1E 5.54%, #000 89.86%)", // Applying the new background gradient
+        borderRadius: "19.55px",
+        border: "0.85px solid rgba(54, 55, 73, 0.43)",
+        background: "linear-gradient(87deg, #1B1C1E 5.54%, #000 89.86%)",
       }}
     >
-      <div className="group-hover/bento:translate-x-2 transition duration-200">
-        <div className="font-sans font-bold text-white mb-2 mt-2">
-          {title}
+      <div className={`${id === 6 && "flex justify-center"} h-full`}>
+        <div className="w-full h-full absolute">
+          {img && (
+            <img
+              src={img}
+              alt={img}
+              className={cn(imgClassName, "object-cover object-center")}
+            />
+          )}
         </div>
-        <div className="font-sans font-normal text-white text-xs">
-          {description}
+        <div
+          className={`absolute right-0 -bottom-5 ${id === 5 && "w-full opacity-80"
+            } `}
+        >
+          {spareImg && (
+            <img
+              src={spareImg}
+              alt={spareImg}
+              className="object-cover object-center w-full h-full"
+            />
+          )}
+        </div>
+
+        <div
+          className={cn(
+            titleClassName,
+            "group-hover/bento:translate-x-2 transition duration-200 relative md:h-full min-h-40 flex flex-col px-5 p-5 lg:p-10"
+          )}
+        >
+          
+
+          <div className="font-sans font-extralight md:max-w-32 md:text-xs lg:text-base text-sm text-white z-10 flex flex-col gap-2">
+          <div className="font-sans font-extralight md:max-w-32 md:text-xs lg:text-base text-sm text-white z-10">
+            {description}
+          </div>
+          <div
+  className={`font-sans text-lg lg:text-3xl max-w-96 font-bold z-10 ${id === 2 ? 'text-primary' : 'text-white'}`}
+>
+  {title}
+</div>
+</div>
+
+{id === 2 && (
+  <div className="flex gap-1 lg:gap-2 w-fit absolute -right-3 lg:-right-2 xs:mt-100 sm:mt-0">
+    <div className="flex flex-col gap-2 md:gap-2 lg:gap-4 "> {/* Added margin-top for xs and sm */}
+      {leftLists.map((item, i) => (
+        <div
+          key={i}
+          className="flex items-center justify-between gap-2 lg:py-4 lg:px-3 py-2 px-3 text-xs lg:text-base text-white opacity-50 lg:opacity-90 rounded-lg bg-[#1B1C1E]"
+          style={{ minWidth: "150px" }} // Ensures consistent box width
+        >
+          <span className="flex-1 text-left">{item.name}</span>
+          <img src={item.icon} alt={item.name} className="w-6 h-6" />
+        </div>
+      ))}
+      <span className="lg:py-4 lg:px-3 py-3 px-2 rounded-lg bg-[#1B1C1E]"></span>
+    </div>
+    <div className="flex flex-col gap-2 md:gap-2 lg:gap-4 "> {/* Added margin-top for xs and sm */}
+      <span className="lg:py-4 lg:px-3 py-4 px-3 rounded-lg bg-[#1B1C1E]"></span>
+      {rightLists.map((item, i) => (
+        <div
+          key={i}
+          className="flex items-center justify-between gap-2 lg:py-4 lg:px-3 py-2 px-3 text-xs lg:text-base text-white opacity-50 lg:opacity-90 rounded-lg bg-[#1B1C1E]"
+          style={{ minWidth: "150px" }} // Ensures consistent box width
+        >
+          <span className="flex-1 text-left">{item.name}</span>
+          <img src={item.icon} alt={item.name} className="w-6 h-6" />
+        </div>
+      ))}
+    </div>
+  </div>
+)}
+
+
+
         </div>
       </div>
     </div>

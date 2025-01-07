@@ -8,6 +8,8 @@ import  Grid  from "./component/Grid";
 export default function Home() {
   return (
     <>
+
+    
       {/* Hero Section */}
   <div className="relative">
     <Hero />

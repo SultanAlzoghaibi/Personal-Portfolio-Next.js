@@ -8,10 +8,14 @@ export default {
   ],
   darkMode: "class",
   theme: {
+    
     extend: {
-        screens: {
-          xs: '320px', // Define an extra small breakpoint (optional)
-        },
+      spacing: {
+        '100': '28rem',  // Adds 32rem as an option
+      },
+      screens: {
+        xs: "320px", // Extra small breakpoint
+      },
       colors: {
         background: "var(--background)",
         foreground: "var(--foreground)",
@@ -26,10 +30,10 @@ export default {
       },
       fontFamily: {
         saira: ['"Saira Stencil One"', "sans-serif"],
-        stencil: ['"Stencil Std Bold"', 'sans-serif'],
+        stencil: ['"Stencil Std Bold"', "sans-serif"],
       },
       animation: {
-        shimmer: "shimmer 6s  infinite",
+        shimmer: "shimmer 6s infinite",
       },
       keyframes: {
         shimmer: {
