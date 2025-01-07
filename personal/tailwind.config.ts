@@ -9,6 +9,9 @@ export default {
   darkMode: "class",
   theme: {
     extend: {
+        screens: {
+          xs: '320px', // Define an extra small breakpoint (optional)
+        },
       colors: {
         background: "var(--background)",
         foreground: "var(--foreground)",
