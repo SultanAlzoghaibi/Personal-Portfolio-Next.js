@@ -37,17 +37,17 @@ export const gridItems = [
     className: "lg:col-span-3 lg:row-span-2 md:col-span-4 md:row-span-3  lg:max-h-[340px] lg:min-h-[300px] md:min-h-[250px]", // Adjusted height for id: 4
     imgClassName: "absolute right-0 bottom-0 md:w-96 w-60",
     titleClassName: "justify-center md:justify-start lg:justify-center",
-    img: "/",
+    img: "/ray-so-export.png",
     spareImg: "/grid.svg",
   },
   {
     id: 5,
     title: "Do you want to start a project together?",
     description: "",
-    className: "lg:col-span-2 lg:row-span-1 md:col-span-1 md:row-span-1 lg:max-h-[150px] lg:min-h-[150px] md:min-h-[130px]", // Explicit height for id: 5
+    className: "lg:col-span-2 lg:row-span-1 md:col-span-2 md:row-span-1 lg:max-h-[150px] lg:min-h-[150px] md:min-h-[130px]", // Explicit height for id: 5
     imgClassName: "",
     titleClassName: "justify-center md:max-w-full max-w-60 text-center",
-    img: "",
     spareImg: "",
   },
 ];
+

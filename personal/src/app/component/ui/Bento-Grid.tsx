@@ -1,6 +1,23 @@
+'use client';
+import { useState } from "react";
+
 import { cn } from "@/lib/utils";
 import { div, object } from "framer-motion/client";
+import { BackgroundGradientAnimation } from "./bggradientanimation";
+import  Magicbutton  from "./Magicbutton";
 
+import Lottie from "react-lottie";
+
+const copied = false;
+
+const defaultOptions = {
+  loop: copied,
+  autoplay: copied,
+  rendererSettings: {
+    preserveAspectRatio: "xMidYMid slice",
+    
+  },
+};
 
 
 export const BentoGrid = ({
@@ -62,6 +79,7 @@ export const BentoGridItem = ({
   spareImg?: string;
 }) => {
   return (
+    
     <div
       className={cn(
         "row-span-1 relative overflow-hidden rounded-3xl border border-white/[0.1] group/bento hover:shadow-xl transition duration-200 shadow-input dark:shadow-none justify-between flex flex-col space-y-4",
@@ -73,7 +91,9 @@ export const BentoGridItem = ({
         background: "linear-gradient(87deg, #1B1C1E 5.54%, #000 89.86%)",
       }}
     >
-      <div className={`${id === 6 && "flex justify-center"} h-full`}>
+      
+        
+      <div className={`${id === 5 && "relative"} ${id === 6 && "flex justify-center"} h-full`}>
         <div className="w-full h-full absolute">
           {img && (
             <img
@@ -84,7 +104,7 @@ export const BentoGridItem = ({
           )}
         </div>
         <div
-          className={`absolute right-0 -bottom-5 ${id === 5 && "w-full opacity-80"
+          className={`absolute right-0 -bottom-5 ${id === 4 && "w-full opacity-80"
             } `}
         >
           {spareImg && (
@@ -95,8 +115,29 @@ export const BentoGridItem = ({
             />
           )}
         </div>
+        { id === 5 && (
+  <div className="relative z-0 group/bento">
+    {/* Background Gradient Animation */}
+    <BackgroundGradientAnimation>
+      <div className="absolute inset-0 w-full h-full z-0">
+        {/* Animation background */}
+      </div>
+    </BackgroundGradientAnimation>
 
-        <div
+    {/* Text */}
+    <div
+      className={cn(
+        titleClassName,
+        "absolute z-10 inset-0 flex items-center justify-center text-white font-bold px-4 pointer-events-none text-3xl text-center md:text-4xl lg:text-7xl"
+      )}
+    >
+      {title}
+    </div>
+  </div>
+)}
+    
+
+    { id !== 5 && <div
           className={cn(
             titleClassName,
             "group-hover/bento:translate-x-2 transition duration-200 relative md:h-full min-h-40 flex flex-col px-5 p-5 lg:p-10"
@@ -144,9 +185,28 @@ export const BentoGridItem = ({
   </div>
 )}
 
+{id === 4 && (
+            <div className="mt-5 relative">
+              {/* button border magic from tailwind css buttons  */}
+              {/* add rounded-md h-8 md:h-8, remove rounded-full */}
+              {/* remove focus:ring-2 focus:ring-slate-400 focus:ring-offset-2 focus:ring-offset-slate-50 */}
+              {/* add handleCopy() for the copy the text */}
+              <div
+                className={`absolute -bottom-5 right-0 ${copied ? "block" : "block"
+                  }`}
+              >
+                {/* <img src="/confetti.gif" alt="confetti" /> */}
+              
+              </div>
+
+              <Magicbutton
+                text="Copy"
+              />
+            </div>
+          )}
 
 
-        </div>
+        </div>}
       </div>
     </div>
   );
