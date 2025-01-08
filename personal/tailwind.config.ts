@@ -2,16 +2,16 @@ import type { Config } from "tailwindcss";
 
 export default {
   content: [
+    "./src/**/*.{ts,tsx}", // Covers your entire src directory
     "./src/pages/**/*.{js,ts,jsx,tsx,mdx}",
     "./src/components/**/*.{js,ts,jsx,tsx,mdx}",
     "./src/app/**/*.{js,ts,jsx,tsx,mdx}",
   ],
   darkMode: "class",
   theme: {
-    
     extend: {
       spacing: {
-        '100': '28rem',  // Adds 32rem as an option
+        '100': '28rem', // Adds 28rem as an option
       },
       screens: {
         xs: "320px", // Extra small breakpoint
@@ -33,9 +33,47 @@ export default {
         stencil: ['"Stencil Std Bold"', "sans-serif"],
       },
       animation: {
+        first: "moveVertical 30s ease infinite",
+        second: "moveInCircle 20s reverse infinite",
+        third: "moveInCircle 40s linear infinite",
+        fourth: "moveHorizontal 40s ease infinite",
+        fifth: "moveInCircle 20s ease infinite",
         shimmer: "shimmer 6s infinite",
       },
       keyframes: {
+        moveHorizontal: {
+          "0%": {
+            transform: "translateX(-50%) translateY(-10%)",
+          },
+          "50%": {
+            transform: "translateX(50%) translateY(10%)",
+          },
+          "100%": {
+            transform: "translateX(-50%) translateY(-10%)",
+          },
+        },
+        moveInCircle: {
+          "0%": {
+            transform: "rotate(0deg)",
+          },
+          "50%": {
+            transform: "rotate(180deg)",
+          },
+          "100%": {
+            transform: "rotate(360deg)",
+          },
+        },
+        moveVertical: {
+          "0%": {
+            transform: "translateY(-50%)",
+          },
+          "50%": {
+            transform: "translateY(50%)",
+          },
+          "100%": {
+            transform: "translateY(-50%)",
+          },
+        },
         shimmer: {
           from: {
             backgroundPosition: "0 0",

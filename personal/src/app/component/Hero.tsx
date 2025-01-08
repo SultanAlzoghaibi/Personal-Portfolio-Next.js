@@ -4,7 +4,7 @@ import BackgroundVid1 from "./backgroundvid1";
 import { Inter } from "next/font/google";
 import { TextGenerateEffect } from "./ui/TextGenerateEffect";
 import { Saira_Stencil_One } from "next/font/google";
-import Magicbutton from "./Magicbutton";
+import Magicbutton from "./ui/Magicbutton";
 
 const stencilFont = Saira_Stencil_One({
   variable: "--font-saira",

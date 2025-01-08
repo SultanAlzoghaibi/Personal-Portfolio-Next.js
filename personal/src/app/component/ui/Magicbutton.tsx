@@ -4,7 +4,7 @@ interface MagicButtonProps {
   text: string;
 }
 
-const MagicButton = ({ text }: MagicButtonProps) => {
+ const MagicButton = ({ text }: MagicButtonProps) => {
   return (
     <button
     className="inline-flex h-12 animate-shimmer items-center justify-center rounded-md 
