@@ -109,20 +109,19 @@ export const BentoGridItem = ({
             {description}
           </div>
           <div
-  className={`font-sans text-lg lg:text-3xl max-w-96 font-bold z-10 ${id === 2 ? 'text-primary' : 'text-white'}`}
+  className={`font-sans text-lg lg:text-3xl max-w-96 font-bold z-10 ${id === 1 ? 'text-primary whitespace-nowrap' : 'text-white'}`}
 >
   {title}
 </div>
 </div>
 
-{id === 2 && (
-  <div className="flex gap-1 lg:gap-2 w-fit absolute -right-3 lg:-right-2 xs:mt-100 sm:mt-0">
-    <div className="flex flex-col gap-2 md:gap-2 lg:gap-4 "> {/* Added margin-top for xs and sm */}
+{id === 1 && (
+  <div className="flex gap-1 lg:gap-2 w-fit absolute -right-0 xs:mt-100 sm:mt-60 md:mt-0 lg:mt-0"> 
+    <div className="flex flex-col gap-2 md:gap-2 lg:gap-4">
       {leftLists.map((item, i) => (
         <div
           key={i}
-          className="flex items-center justify-between gap-2 lg:py-4 lg:px-3 py-2 px-3 text-xs lg:text-base text-white opacity-50 lg:opacity-90 rounded-lg bg-[#1B1C1E]"
-          style={{ minWidth: "150px" }} // Ensures consistent box width
+          className="flex items-center justify-between gap-2 lg:py-4 lg:px-3 py-2 px-3 text-xs lg:text-base text-white opacity-50 lg:opacity-90 rounded-lg bg-[#1B1C1E] xs:min-w-[100px] sm:min-w-[120px] md:min-w-[150px]"
         >
           <span className="flex-1 text-left">{item.name}</span>
           <img src={item.icon} alt={item.name} className="w-6 h-6" />
@@ -130,13 +129,12 @@ export const BentoGridItem = ({
       ))}
       <span className="lg:py-4 lg:px-3 py-3 px-2 rounded-lg bg-[#1B1C1E]"></span>
     </div>
-    <div className="flex flex-col gap-2 md:gap-2 lg:gap-4 "> {/* Added margin-top for xs and sm */}
+    <div className="flex flex-col gap-2 md:gap-2 lg:gap-4">
       <span className="lg:py-4 lg:px-3 py-4 px-3 rounded-lg bg-[#1B1C1E]"></span>
       {rightLists.map((item, i) => (
         <div
           key={i}
-          className="flex items-center justify-between gap-2 lg:py-4 lg:px-3 py-2 px-3 text-xs lg:text-base text-white opacity-50 lg:opacity-90 rounded-lg bg-[#1B1C1E]"
-          style={{ minWidth: "150px" }} // Ensures consistent box width
+          className="flex items-center justify-between gap-2 lg:py-4 lg:px-3 py-2 px-3 text-xs lg:text-base text-white opacity-50 lg:opacity-90 rounded-lg bg-[#1B1C1E] xs:min-w-[100px] sm:min-w-[120px] md:min-w-[150px]"
         >
           <span className="flex-1 text-left">{item.name}</span>
           <img src={item.icon} alt={item.name} className="w-6 h-6" />
