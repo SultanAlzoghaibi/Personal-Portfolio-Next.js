@@ -4,7 +4,7 @@ export const gridItems = [
     id: 1,
     title: "My tech stack",
     description: "I constantly try to improve",
-    className: "lg:col-span-3 md:col-span-4 md:row-span-4  lg:min-h-[60vh] xs:min-h-[60vh]",
+    className: "lg:col-span-3 md:col-span-4 md:row-span-4  lg:min-h-[60vh] sm:min-h-[50vh] xs:min-h-[60vh]",
     imgClassName: "",
     titleClassName: "justify-center",
     img: "",
