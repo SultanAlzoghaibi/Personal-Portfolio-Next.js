@@ -116,32 +116,33 @@ export const BentoGridItem = ({
           )}
         </div>
         { id === 5 && (
-  <div className="relative z-1 group/bento min-h-40 flex">
+  <div className="relative z-1 group min-h-40 flex flex-col justify-center items-center">
+    {/* Background (no hover effect applied here) */}
     <div className="absolute inset-0 w-full h-full z-0">
-       <BackgroundGradientAnimation /> 
+      <BackgroundGradientAnimation />
     </div>
 
-    {/* Text */}
-    <div
-  className={cn(
-    titleClassName,
-    `absolute top-0 left-1/2 transform -translate-x-1/2 z-10 flex 
-     justify-center  text-white font-bold sm:px-0 md:px-2 px-2 my-6 mx-0
-     text-2xl xs:text-lg sm:text-lg md:text-lg lg:text-2xl
-     w-full text-center`
-  )}
->
-  {title}
-</div>
+    {/* Element that will be affected by hover */}
+    <div className="group-hover:translate-x-2 transition duration-200 relative flex flex-col justify-center items-center px-5 p-5 lg:p-2 z-10">
+      {/* Text */}
+      <div
+        className={cn(
+          titleClassName,
+          `text-white font-bold sm:px-0 md:px-2 px-2  mx-0
+          text-2xl xs:text-lg sm:text-lg md:text-lg lg:text-2xl
+          w-full text-center`
+        )}
+      >
+        {title}
+      </div>
 
-    {/* Centered MagicButton */}
-    <div  className="absolute bottom-0 left-1/2 transform -translate-x-1/2 mb-5">
-    <LinkButton text="Github" icon="tech-logos/github-white-icon.webp" link="https://github.com/SultanAlzoghaibi" />
-
+      {/* Centered MagicButton */}
+      <div className="mt-2">
+        <LinkButton text="Github" icon="tech-logos/discord.webp" link="https://github.com/SultanAlzoghaibi" />
+      </div>
     </div>
   </div>
 )}
-
     
 
     { id !== 5 && <div
@@ -157,7 +158,7 @@ export const BentoGridItem = ({
           </div>
           
           <div
-  className={`font-sans text-lg lg:text-3xl max-w-96 font-bold z-10 ${id === 3 ? 'sm:absolute sm:text-2xl lg:absolute lg:w-60 lg:mb-5 lg:top-3 lg lg:text-2xl' : ''} ${id === 1 ? 'text-primary whitespace-nowrap' : 'text-white'}`}
+  className={`font-sans text-lg lg:text-3xl max-w-96 font-bold z-10 ${id === 3 ? 'sm:absolute lg:absolute lg:w-60 lg:mb-5 lg:top-3 lg lg:text-2xl' : ''} ${id === 1 ? 'text-primary whitespace-nowrap' : 'text-white'}`}
 >
 
   {title}
