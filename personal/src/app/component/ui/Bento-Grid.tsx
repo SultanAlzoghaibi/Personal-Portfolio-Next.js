@@ -5,8 +5,8 @@ import { cn } from "@/lib/utils";
 import { div, object } from "framer-motion/client";
 import { BackgroundGradientAnimation } from "./bggradientanimation";
 import  Magicbutton  from "./Magicbutton";
-
-import Lottie from "react-lottie";
+import {GridBackgroundDemo} from "./GridBackgroundDemo"
+import LinkButton from "../linkButton";
 
 const copied = false;
 
@@ -93,7 +93,7 @@ export const BentoGridItem = ({
     >
       
         
-      <div className={`${id === 5 && "relative"} ${id === 6 && "flex justify-center"} h-full`}>
+      <div className={`  h-full`}>
         <div className="w-full h-full absolute">
           {img && (
             <img
@@ -116,9 +116,9 @@ export const BentoGridItem = ({
           )}
         </div>
         { id === 5 && (
-  <div className="relative z-1 group/bento min-h-40">
+  <div className="relative z-1 group/bento min-h-40 flex">
     <div className="absolute inset-0 w-full h-full z-0">
-      <BackgroundGradientAnimation />
+       <BackgroundGradientAnimation /> 
     </div>
 
     {/* Text */}
@@ -126,8 +126,8 @@ export const BentoGridItem = ({
   className={cn(
     titleClassName,
     `absolute top-0 left-1/2 transform -translate-x-1/2 z-10 flex 
-     justify-center  text-white font-bold sm:px-0 px-2 my-6 mx-0
-     text-2xl xs:text-xl sm:text-2xl md:text-xl lg:text-2xl
+     justify-center  text-white font-bold sm:px-0 md:px-2 px-2 my-6 mx-0
+     text-2xl xs:text-lg sm:text-lg md:text-lg lg:text-2xl
      w-full text-center`
   )}
 >
@@ -135,7 +135,10 @@ export const BentoGridItem = ({
 </div>
 
     {/* Centered MagicButton */}
-    <Magicbutton className="absolute bottom-0 left-1/2 transform -translate-x-1/2 mb-5" text="Discord" />
+    <div  className="absolute bottom-0 left-1/2 transform -translate-x-1/2 mb-5">
+    <LinkButton text="Github" icon="tech-logos/github-white-icon.webp" link="https://github.com/SultanAlzoghaibi" />
+
+    </div>
   </div>
 )}
 
@@ -152,16 +155,18 @@ export const BentoGridItem = ({
           <div className="font-sans font-extralight sm:max-w-32 md:max-w-32 md:text-xs lg:text-base text-sm text-white z-10">
             {description}
           </div>
+          
           <div
-  className={`font-sans text-lg lg:text-3xl max-w-96 font-bold z-10 ${id === 1 ? 'text-primary whitespace-nowrap' : 'text-white'}`}
+  className={`font-sans text-lg lg:text-3xl max-w-96 font-bold z-10 ${id === 3 ? 'sm:absolute sm:text-2xl lg:absolute lg:w-60 lg:mb-5 lg:top-3 lg lg:text-2xl' : ''} ${id === 1 ? 'text-primary whitespace-nowrap' : 'text-white'}`}
 >
+
   {title}
 </div>
 </div>
 
 {id === 1 && (
-  <div className="flex gap-1 lg:gap-2 w-fit absolute -right-0 xs:mt-100 sm:mt-60 md:mt-0 lg:mt-0"> 
-    <div className="flex flex-col gap-2 md:gap-2 lg:gap-4">
+  <div className=" flex gap-1 lg:gap-2 w-fit absolute -right-0 xs:mt-100 sm:mt-60 md:mt-0 lg:mt-0"> 
+    <div className=" flex flex-col gap-2 md:gap-2 lg:gap-4">
       {leftLists.map((item, i) => (
         <div
           key={i}
@@ -188,23 +193,24 @@ export const BentoGridItem = ({
   </div>
 )}
 
-{id === 4 && (
-            <div className="mt-5 relative">
-             
-              <div
-                className={`absolute -bottom-5 right-0 ${copied ? "block" : "block"
-                  }`}
-              >
-          
-              
-              </div>
+{ id === 3 && 
+<div >
+  <div className="left-[-20] top-[-90] absolute w-full h-full ">
+<GridBackgroundDemo />  
+</div>
+ <Magicbutton className="  absolute bottom-0 mb-4 mr-9 " text="learn more" />
+</div>
 
-      
-            </div>
-          )}
+
+}
+
+
 
 
         </div>}
+
+
+
       </div>
     </div>
   );

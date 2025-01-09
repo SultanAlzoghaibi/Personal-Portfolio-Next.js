@@ -6,9 +6,9 @@ export const BackgroundGradientAnimation = ({
   gradientBackgroundStart = "rgb(190, 74, 74)", // Red shade
   gradientBackgroundEnd = "rgb(20, 20, 20)", // Dark black
   firstColor = "128, 128, 128", // Grey
-  secondColor = "0, 0, 0", // Silver
+  secondColor = "0, 0, 0", // balck
   thirdColor = "20, 20, 20", // Dark grey
-  fourthColor = "200, 0, 0", // Bright red
+  fourthColor = "250, 0, 0", // Bright red
   fifthColor = "100, 100, 100", // Medium grey
   pointerColor = "190, 74, 74", // Red (matches theme)
   size = "80%",
@@ -89,7 +89,7 @@ export const BackgroundGradientAnimation = ({
   return (
     <div
       className={cn(
-        "h-screen w-screen relative overflow-hidden top-0 left-0 bg-[linear-gradient(40deg,var(--gradient-background-start),var(--gradient-background-end))]",
+        "h-full w-full absolute overflow-hidden top-0 left-0 bg-[linear-gradient(40deg,var(--gradient-background-start),var(--gradient-background-end))]",
         containerClassName
       )}
     >

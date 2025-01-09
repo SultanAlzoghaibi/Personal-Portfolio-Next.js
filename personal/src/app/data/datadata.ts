@@ -12,7 +12,7 @@ export const gridItems = [
   },
   {
     id: 2,
-    title: "I prioritize client collaboration, fostering open communication ",
+    title: "Interested on how I built this Next.js site? ",
     description: "",
     className: "lg:col-span-2 md:col-span-2 md:row-span-4 lg:min-h-[60vh]",
     imgClassName: "w-full h-full",
@@ -22,13 +22,13 @@ export const gridItems = [
   },
   {
     id: 3,
-    title: "Tech enthusiast with a passion for development.",
+    title: "This site was built with Next.js",
     description: "",
     className: "lg:col-span-2 lg:row-span-1 md:col-span-2 md:row-span-2 lg:max-h-[150px] lg:min-h-[150px] md:min-h-[180px] " , // Increased min height
     imgClassName: "",
     titleClassName: "justify-start",
     img: "",
-    spareImg: "/b4.svg",
+    spareImg: "",
   },
   {
     id: 4,
@@ -37,12 +37,12 @@ export const gridItems = [
     className: "lg:col-span-3 lg:row-span-2 md:col-span-4 md:row-span-3  lg:max-h-[340px] lg:min-h-[300px] md:min-h-[250px]", // Adjusted height for id: 4
     imgClassName: "absolute right-0 bottom-0 md:w-96 w-60",
     titleClassName: "justify-center md:justify-start lg:justify-center",
-    img: "/ray-so-export.png",
+    img: "id5.png",
     spareImg: "/grid.svg",
   },
   {
     id: 5,
-    title: "Want to do a hackathon together?",
+    title: "Want to do a hackathon or Leetcode together?",
     description: "",
     className: "lg:col-span-2 lg:row-span-1 md:col-span-2 md:row-span-1 lg:max-h-[150px] lg:min-h-[150px] md:min-h-[130px]", // Explicit height for id: 5
     imgClassName: "",
