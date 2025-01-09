@@ -116,25 +116,29 @@ export const BentoGridItem = ({
           )}
         </div>
         { id === 5 && (
-  <div className="relative z-0 group/bento">
-    {/* Background Gradient Animation */}
-    <BackgroundGradientAnimation>
-      <div className="absolute inset-0 w-full h-full z-0">
-        {/* Animation background */}
-      </div>
-    </BackgroundGradientAnimation>
+  <div className="relative z-1 group/bento min-h-40">
+    <div className="absolute inset-0 w-full h-full z-0">
+      <BackgroundGradientAnimation />
+    </div>
 
     {/* Text */}
     <div
-      className={cn(
-        titleClassName,
-        "absolute z-10 inset-0 flex items-center justify-center text-white font-bold px-4 pointer-events-none text-3xl text-center md:text-4xl lg:text-7xl"
-      )}
-    >
-      {title}
-    </div>
+  className={cn(
+    titleClassName,
+    `absolute top-0 left-1/2 transform -translate-x-1/2 z-10 flex 
+     justify-center  text-white font-bold sm:px-0 px-2 my-6 mx-0
+     text-2xl xs:text-xl sm:text-2xl md:text-xl lg:text-2xl
+     w-full text-center`
+  )}
+>
+  {title}
+</div>
+
+    {/* Centered MagicButton */}
+    <Magicbutton className="absolute bottom-0 left-1/2 transform -translate-x-1/2 mb-5" text="Discord" />
   </div>
 )}
+
     
 
     { id !== 5 && <div
@@ -143,10 +147,9 @@ export const BentoGridItem = ({
             "group-hover/bento:translate-x-2 transition duration-200 relative md:h-full min-h-40 flex flex-col px-5 p-5 lg:p-10"
           )}
         >
-          
 
-          <div className="font-sans font-extralight md:max-w-32 md:text-xs lg:text-base text-sm text-white z-10 flex flex-col gap-2">
-          <div className="font-sans font-extralight md:max-w-32 md:text-xs lg:text-base text-sm text-white z-10">
+          <div className="font-sans font-extralight sm:max-w-32 md:max-w-32 md:text-xs lg:text-base text-sm text-white z-10 flex flex-col gap-2">
+          <div className="font-sans font-extralight sm:max-w-32 md:max-w-32 md:text-xs lg:text-base text-sm text-white z-10">
             {description}
           </div>
           <div
@@ -187,21 +190,16 @@ export const BentoGridItem = ({
 
 {id === 4 && (
             <div className="mt-5 relative">
-              {/* button border magic from tailwind css buttons  */}
-              {/* add rounded-md h-8 md:h-8, remove rounded-full */}
-              {/* remove focus:ring-2 focus:ring-slate-400 focus:ring-offset-2 focus:ring-offset-slate-50 */}
-              {/* add handleCopy() for the copy the text */}
+             
               <div
                 className={`absolute -bottom-5 right-0 ${copied ? "block" : "block"
                   }`}
               >
-                {/* <img src="/confetti.gif" alt="confetti" /> */}
+          
               
               </div>
 
-              <Magicbutton
-                text="Copy"
-              />
+      
             </div>
           )}
 
