@@ -42,7 +42,7 @@ export const gridItems = [
   },
   {
     id: 5,
-    title: "Do you want to start a project together?",
+    title: "Want to do a hackathon together?",
     description: "",
     className: "lg:col-span-2 lg:row-span-1 md:col-span-2 md:row-span-1 lg:max-h-[150px] lg:min-h-[150px] md:min-h-[130px]", // Explicit height for id: 5
     imgClassName: "",
