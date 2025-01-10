@@ -1,4 +1,5 @@
 import React from 'react'
+import Cards from './Cards'
 
 
 const RecentProjects = () => {
@@ -11,8 +12,8 @@ const RecentProjects = () => {
     <span className="text-primary">  Projects</span>
   </h1>
 </div>
-    
 
+    <Cards />
 
     </div>
   )
