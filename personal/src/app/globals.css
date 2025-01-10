@@ -32,3 +32,9 @@ body {
 .shadow-text {
   text-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
 }
+
+@layer utilities {
+  .heading {
+    @apply font-bold text-4xl md:text-5xl text-center;
+  }
+}
