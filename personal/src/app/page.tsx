@@ -4,6 +4,7 @@ import BackgroundVid1 from "./component/backgroundvid1";
 import Hero from "./component/Hero";
 import { FloatingNav } from "./component/ui/floating-navbar";
 import  Grid  from "./component/Grid";
+import RecentProjects from "./component/RecentProjects";
 
 export default function Home() {
   return (
@@ -22,6 +23,8 @@ export default function Home() {
   <div className="container mx-auto px-4">
     <Grid />
   </div>
+
+  <RecentProjects />
 
 
       <FloatingNav 

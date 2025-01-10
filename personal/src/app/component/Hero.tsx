@@ -39,10 +39,10 @@ const Hero = () => {
   </div>
 
   {/* Content */}
-  <div className="relative flex flex-col items-start justify-start pt-20 pl-[50px]">
+  <div className="relative flex flex-col items-start lg:max-w-[800px] md:max-w-[800px] sm:max-w-[500px] max-w-[500px]  justify-start pt-20  pl-[50px]">
     {/* Title text with generate effect */}
     <TextGenerateEffect
-      className="font-stencil text-[70px] font-extrabold leading-none lg: -right-[50px] "
+      className="font-stencil text-[70px] font-extrabold leading-none  lg: -right-[50px] "
       words="Welcome to my site! Sultan Alzoghaibi"
     />
 
