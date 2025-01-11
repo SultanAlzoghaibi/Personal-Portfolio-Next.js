@@ -2,9 +2,9 @@ import React from "react";
 
 const BackgroundVid1: React.FC = () => {
   return (
-    <div className="relative w-screen h-[80vh]">
+    <div className="relative w-screen h-[90vh]">
       <video
-        className="absolute top-0 left-0 w-full h-full object-cover object-bottom -z-10"
+        className="absolute top-0 left-0 w-full h-full object-cover object-bottom"
         autoPlay
         loop
         muted

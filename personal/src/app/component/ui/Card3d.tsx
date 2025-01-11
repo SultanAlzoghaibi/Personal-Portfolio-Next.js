@@ -51,7 +51,7 @@ export const CardContainer = ({
     <MouseEnterContext.Provider value={[isMouseEntered, setIsMouseEntered]}>
       <div
         className={cn(
-          "py-20 flex items-center justify-center",
+          "pt-10 flex items-center justify-center",
           containerClassName
         )}
         style={{
@@ -93,7 +93,7 @@ export const CardBody = ({
   return (
     <div
       className={cn(
-        "h-96 w-96 [transform-style:preserve-3d]  [&>*]:[transform-style:preserve-3d]",
+        "h-96 w-96 mx-10 [transform-style:preserve-3d]  [&>*]:[transform-style:preserve-3d]",
         className
       )}
       onMouseEnter={onMouseEnter} // Pass the onMouseEnter handler here

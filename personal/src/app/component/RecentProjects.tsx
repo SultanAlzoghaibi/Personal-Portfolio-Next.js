@@ -4,7 +4,7 @@ import Cards from './Cards'
 
 const RecentProjects = () => {
   return (
-    <div>
+    <div id="projects">
 
 <div className="pt-20 bg-center flex items-center justify-center">
   <h1 className="heading text-white">
