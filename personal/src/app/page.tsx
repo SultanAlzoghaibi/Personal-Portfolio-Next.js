@@ -6,30 +6,33 @@ import { FloatingNav } from "./component/ui/floating-navbar";
 import  Grid  from "./component/Grid";
 import RecentProjects from "./component/RecentProjects";
 
-import { navItems } from "./data/datadata";
+import { navItems } from "./data/datadata"
+import Approach from "./component/Approach";
+
 
 export default function Home() {
   return (
     <>
-
-    
+  <FloatingNav navItems={navItems} />
       {/* Hero Section */}
   <div className="relative">
     <Hero />
   </div>
 
   {/* Spacer Between Sections */}
-  <div className="my-64"></div>
+  <div className="py-10 my-32"></div>
+  
 
   {/* Grid Section */}
   <div className="container mx-auto px-4">
     <Grid />
   </div>
+  <div className="my-16"></div>
 
   <RecentProjects />
 
+    <Approach />
 
-  <FloatingNav navItems={navItems} />
 
       
       
