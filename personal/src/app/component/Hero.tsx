@@ -32,7 +32,7 @@ const Hero = () => {
   }, []);
 
   return (
-    <div className="relative">
+    <div className="relative" id="home">
   {/* Background video */}
   <div className="absolute inset-0 -z-15">
     <BackgroundVid1 />

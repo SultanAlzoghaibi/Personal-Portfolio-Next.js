@@ -6,6 +6,8 @@ import { FloatingNav } from "./component/ui/floating-navbar";
 import  Grid  from "./component/Grid";
 import RecentProjects from "./component/RecentProjects";
 
+import { navItems } from "./data/datadata";
+
 export default function Home() {
   return (
     <>
@@ -27,15 +29,8 @@ export default function Home() {
   <RecentProjects />
 
 
-      <FloatingNav 
-      className=""
-      navItems={[
-          {name: "Home",
-          link: "/",
-          icon: <span className="text-white">🏠</span>},
-      ]}
-   
-      />
+  <FloatingNav navItems={navItems} />
+
       
       
       <div className="my-16"></div>

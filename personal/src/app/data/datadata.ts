@@ -1,4 +1,10 @@
-import { video } from "framer-motion/client";
+export const navItems = [
+  { name: "Home", link: "home" },
+  { name: "About", link: "about" },
+  { name: "Projects", link: "projects" },
+  { name: "About My Site", link: "blog" },
+  { name: "Contact", link: "#contact" },
+];
 
 export const gridItems = [
 
