@@ -14,6 +14,7 @@ const MouseEnterContext = createContext<
   [boolean, React.Dispatch<React.SetStateAction<boolean>>] | undefined
 >(undefined);
 
+
 export const CardContainer = ({
   children,
   className,
@@ -37,6 +38,7 @@ export const CardContainer = ({
 
   const handleMouseEnter = (e: React.MouseEvent<HTMLDivElement>) => {
     setIsMouseEntered(true);
+    
     if (!containerRef.current) return;
   };
 
@@ -76,12 +78,17 @@ export const CardContainer = ({
   );
 };
 
+// Update the CardBody to accept mouse events
 export const CardBody = ({
   children,
   className,
+  onMouseEnter,
+  onMouseLeave,
 }: {
   children: React.ReactNode;
   className?: string;
+  onMouseEnter?: React.MouseEventHandler<HTMLDivElement>; // Add onMouseEnter prop
+  onMouseLeave?: React.MouseEventHandler<HTMLDivElement>; // Add onMouseLeave prop
 }) => {
   return (
     <div
@@ -89,6 +96,8 @@ export const CardBody = ({
         "h-96 w-96 [transform-style:preserve-3d]  [&>*]:[transform-style:preserve-3d]",
         className
       )}
+      onMouseEnter={onMouseEnter} // Pass the onMouseEnter handler here
+      onMouseLeave={onMouseLeave} // Pass the onMouseLeave handler here
     >
       {children}
     </div>

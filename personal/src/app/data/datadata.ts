@@ -1,3 +1,5 @@
+import { video } from "framer-motion/client";
+
 export const gridItems = [
 
   {
@@ -12,7 +14,7 @@ export const gridItems = [
   },
   {
     id: 2,
-    title: "Interested on how I built this Next.js site? ",
+    title: " 🏗️ 🏗️ 🏗️ This bento is under construction 🏗️ 🏗️ 🏗️",
     description: "",
     className: "lg:col-span-2 md:col-span-2 md:row-span-4 lg:min-h-[60vh]",
     imgClassName: "w-full h-full",
@@ -56,17 +58,18 @@ export const projects = [
   {
     id: 1,
     title: "pacman",
-    des: "Explore the wonders of our solar system with this captivating 3D simulation of the planets using Three.js.",
-    img: "/p1.svg",
-    iconLists: ["/re.svg", "/tail.svg", "/ts.svg", "/three.svg", "/fm.svg"],
-    link: "/ui.earth.com",
-  },
-  {
+    des: "Smart ai pathing pacman game",
+    video: "/videos/backroundVid.mp4",
+    githublink: "https://github.com/SultanAlzoghaibi",
+    learnMorelink: "https://github.com/SultanAlzoghaibi",
+    imgtechstack: ["/tech-logos/java.png", "/tech-logos/javaFX.png"], // Ensure paths start with `/` or are absolute
+  },{
     id: 2,
-    title: "3D Earth",
-    des: "Explore the wonders of our solar system with this captivating 3D simulation of the planets using Three.js.",
-    img: "/p2.svg",
-    iconLists: ["/re.svg", "/tail.svg", "/ts.svg", "/three.svg", "/fm.svg"],
-    link: "/ui.earth.com",
-  },
+    title: "Personal Portfolio",
+    des: "Next.js site that showcases my skills and projects",
+    video: "/videos/backroundVid.mp4",
+    githublink: "https://github.com/SultanAlzoghaibi",
+    learnMorelink: "https://github.com/SultanAlzoghaibi",
+    imgtechstack: ["/tech-logos/typescript.png", "/tech-logos/nextjs.png","/tech-logos/tailwindcss.png", "/tech-logos/react.png", "/tech-logos/figma.png"], // Ensure paths start with `/` or are absolute
+  }
 ]

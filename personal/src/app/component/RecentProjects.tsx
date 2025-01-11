@@ -6,7 +6,7 @@ const RecentProjects = () => {
   return (
     <div>
 
-<div className="py-20 bg-center flex items-center justify-center">
+<div className="pt-20 bg-center flex items-center justify-center">
   <h1 className="heading text-white">
     My Recent
     <span className="text-primary">  Projects</span>
