@@ -1,17 +1,24 @@
-import React from 'react';
-import { CardContainer } from './ui/Card3d'; // This imports from the ui/Card3d file
-import { projects } from '../data/datadata'; // This imports from the data/datadata file
-import { CardBody } from './ui/Card3d';
-import {CardItem} from './ui/Card3d'
-import { ThreeDCardDemo } from './ThreeDCardDemo';
+import React from "react";
+import { projects } from "../data/datadata"; // Importing projects from data file
+import { ThreeDCardDemo } from "./ThreeDCardDemo";
 
 const Cards = () => {
   return (
-    <div>
-     <ThreeDCardDemo/>
-
-
-      <h1 className="text-white">TEST</h1>
+    <div className="flex justify-center items-center min-h-screen">
+      {/* Cards container */}
+      <div className="flex flex-wrap gap-10 justify-center">
+        {projects.map((project) => (
+          <ThreeDCardDemo
+            key={project.id} // Using unique project id
+            title={project.title}
+            description={project.des}
+            video={project.video}
+            githublink={project.githublink}
+            learnMorelink={project.learnMorelink} // Pass the learnMorelink
+            imgtechstack={project.imgtechstack}
+          />
+        ))}
+      </div>
     </div>
   );
 };
