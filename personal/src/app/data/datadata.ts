@@ -76,6 +76,6 @@ export const projects = [
     video: "/videos/backroundVid.mp4",
     githublink: "https://github.com/SultanAlzoghaibi",
     learnMorelink: "https://github.com/SultanAlzoghaibi",
-    imgtechstack: ["/tech-logos/typescript.png", "/tech-logos/nextjs.png","/tech-logos/tailwindcss.png", "/tech-logos/react.png", "/tech-logos/figma.png"], // Ensure paths start with `/` or are absolute
+    imgtechstack: ["/tech-logos/typescript.png","/tech-logos/playwright.png","/tech-logos/framer-motion.png", "/tech-logos/nextjs.png","/tech-logos/tailwindcss.png", "/tech-logos/react.png", "/tech-logos/figma.png"], // Ensure paths start with `/` or are absolute
   }
 ]
