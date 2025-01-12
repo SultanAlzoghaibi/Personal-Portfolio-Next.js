@@ -2,6 +2,7 @@ import React from "react";
 import LinkButton from "./linkButton";
 import Magicbutton from "./ui/Magicbutton";
 import { GridBackgroundDemo } from "./ui/GridBackgroundDemo"; // Importing the component
+import { Cover } from "./ui/cover";
 
 const Footer = () => {
   return (
@@ -10,14 +11,15 @@ const Footer = () => {
   
 
       {/* Footer content */}
-      <div className="relative flex flex-col items-center z-10">
+      <div className="relative flex flex-col items-center z-10 mx-9">
         <h1 className="heading lg:max-w-[45vw] text-white">
           Help me, <span className="text-primary"> Help you</span>
-          , make code that is Blazzling fast
+          , write code that is <span>  <Cover className="">
+          blazingly fast  🚀
+      </Cover>  </span>
         </h1>
         <p className="text-white md:mt-10 my-5 text-center">
-          Reach out to me today and let&apos;s discuss how I can help you
-          achieve your goals.
+          If you're an employer, checkout my Linkdin, Github, and Resume so see why I am a good candidate.
         </p>
         <a href="mailto:contact@jsmastery.pro">
           <Magicbutton text="Contact me" />
