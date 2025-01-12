@@ -35,7 +35,7 @@ export const gridItems = [
     className: "lg:col-span-2 lg:row-span-1 md:col-span-2 md:row-span-2 lg:max-h-[150px] lg:min-h-[150px] md:min-h-[180px] " , // Increased min height
     imgClassName: "",
     titleClassName: "justify-start",
-    img: "/test.png",
+    img: "",
     spareImg: "",
   },
   {
@@ -79,3 +79,5 @@ export const projects = [
     imgtechstack: ["/tech-logos/typescript.png","/tech-logos/playwright.png","/tech-logos/framer-motion.png", "/tech-logos/nextjs.png","/tech-logos/tailwindcss.png", "/tech-logos/react.png", "/tech-logos/figma.png"], // Ensure paths start with `/` or are absolute
   }
 ]
+
+

@@ -9,6 +9,7 @@ import Script from 'next/script'
 
 import { navItems } from "./data/datadata";
 import { CanvasRevealEffectDemo } from "./component/Approach";
+import Footer from "./component/Footer";
 
 export default function Home() {
   return (
@@ -37,10 +38,9 @@ export default function Home() {
 
       {/* Approach Section */}
       <CanvasRevealEffectDemo />
-
       {/* Spacer */}
       <div className="my-16"></div>
-
+      <Footer />  
       {/* Future Elements */}
       <div className="relative z-10">
         <p className="text-white">Add more content here!</p>

@@ -2,26 +2,38 @@
 
 import React from "react";
 import { AnimatePresence, motion } from "framer-motion";
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
 export function CanvasRevealEffectDemo() {
   return (
-    <div className="py-20 flex flex-col lg:flex-row items-center justify-center bg-black w-full gap-4 mx-auto px-8">
-      <Card
-        title="Sheetal is Nisha"
-        description="A description for Sheetal is Nisha."
-        icon={<ResearchIcon />}
-      />
-      <Card
-        title="Nisha is Munni"
-        description="A description for Nisha is Munni."
-        icon={<DiagrammingIcon />}
-      />
-      <Card
-        title="Munni is Aditi"
-        description="A description for Munni is Aditi."
-        icon={<CodeIcon />}
-      />
-    </div>
+    <>
+     <div className="pt-20 bg-center flex items-center justify-center">
+  <h1 className="heading text-white">
+   My
+    <span className="text-primary">  Approach</span>
+  </h1>
+</div>
+<div className="py-10 text-white flex flex-col lg:flex-row items-center justify-center w-full gap-4 mx-auto px-8">
+  <Card
+    title="Research and Defining"
+    description="I gather research on what to build and the resources needed, as well as define the project’s MSCW (Must-haves, Should-haves, Could-haves, Won’t-haves)"
+    icon={<ResearchIcon />}
+  />
+  <Card
+    title="Diagramming and Layout"
+    description="I create flowcharts (using FigJam) or layouts in Figma, which saves me crucial time 
+    during the coding process. This also improves team communication."
+    icon={<DiagrammingIcon />}
+  />
+  <Card
+    title="Coding"
+    description="In this phase, I focus on writing code! I take time to think at a micro level 
+    before coding, which helps me break big projects into manageable, day-by-day components."
+    icon={<CodeIcon />}
+  />
+</div>
+      
+    </>
   );
 }
 
@@ -80,17 +92,25 @@ const Card = ({
   );
 };
 
-// Research Papers and Magnifying Glass Icon
+// Research Icon with Circle
 const ResearchIcon = () => (
   <svg
-    width="24"
-    height="24"
+    width="40"
+    height="40"
     fill="none"
     xmlns="http://www.w3.org/2000/svg"
     className="h-10 w-10 text-white group-hover:text-black"
   >
+    <circle
+      cx="20"
+      cy="20"
+      r="19"
+      stroke="currentColor"
+      strokeWidth="2"
+      fill="none"
+    />
     <path
-      d="M21 21l-4.35-4.35M18 10V4a2 2 0 0 0-2-2H6a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h8a2 2 0 0 0 2-2V12l2-2V10z"
+      d="M26 26l-4.35-4.35M24 15V9a2 2 0 0 0-2-2H10a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h8a2 2 0 0 0 2-2v-5l2-2v-1z"
       stroke="currentColor"
       strokeWidth="2"
       strokeLinecap="round"
@@ -99,17 +119,25 @@ const ResearchIcon = () => (
   </svg>
 );
 
-// Software Diagramming Symbol Icon (Flowchart-style Icon)
+// Diagramming Icon with Circle
 const DiagrammingIcon = () => (
   <svg
-    width="24"
-    height="24"
+    width="40"
+    height="40"
     fill="none"
     xmlns="http://www.w3.org/2000/svg"
     className="h-10 w-10 text-white group-hover:text-black"
   >
+    <circle
+      cx="20"
+      cy="20"
+      r="19"
+      stroke="currentColor"
+      strokeWidth="2"
+      fill="none"
+    />
     <path
-      d="M6 3v18M6 12h12M18 3h3M18 21h3"
+      d="M12 8v24M12 20h16M28 8h3M28 32h3"
       stroke="currentColor"
       strokeWidth="2"
       strokeLinecap="round"
@@ -118,17 +146,25 @@ const DiagrammingIcon = () => (
   </svg>
 );
 
-// Code Block (</>) Icon
+// Code Icon with Circle
 const CodeIcon = () => (
   <svg
-    width="24"
-    height="24"
+    width="40"
+    height="40"
     fill="none"
     xmlns="http://www.w3.org/2000/svg"
     className="h-10 w-10 text-white group-hover:text-black"
   >
+    <circle
+      cx="20"
+      cy="20"
+      r="19"
+      stroke="currentColor"
+      strokeWidth="2"
+      fill="none"
+    />
     <path
-      d="M7 7l-4 4 4 4M17 7l4 4-4 4"
+      d="M15 15l-4 5 4 5M25 15l4 5-4 5"
       stroke="currentColor"
       strokeWidth="2"
       strokeLinecap="round"

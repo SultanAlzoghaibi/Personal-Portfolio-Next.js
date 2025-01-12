@@ -12,7 +12,7 @@ export const CanvasRevealEffect: React.FC<CanvasRevealEffectProps> = ({
   className,
 }) => {
   return (
-    <div className={cn("relative bg-black p-8", className)}>
+    <div className={cn("relative p-8", className)}>
       <div className="grid grid-cols-2 gap-4">
         {items.map((item, index) => (
           <div
