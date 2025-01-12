@@ -142,7 +142,7 @@ export function ThreeDCardDemo({
                 icon="tech-logos/github-white-icon.webp"
                 link="https://github.com/SultanAlzoghaibi"
               />
-              <MagicButton text="sign up" />
+              <MagicButton text="sign up" link="http://localhost:3000/myprojects/1" />
             </span>
           </CardItem>
         </div>

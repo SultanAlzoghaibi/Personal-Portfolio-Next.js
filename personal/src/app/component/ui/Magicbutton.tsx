@@ -1,11 +1,15 @@
 type MagicButtonProps = {
   text: string;
   className?: string;
+  link: string; // The link to navigate to
 };
 
-const MagicButton = ({ text, className }: MagicButtonProps) => {
+const MagicButton = ({ text, className, link }: MagicButtonProps) => {
   return (
-    <button
+    <a
+      href={link} // Dynamically sets the href using the `link` prop
+      target="_blank" // Opens the link in a new tab
+      rel="noopener noreferrer" // Security for external links
       className={`inline-flex h-12 animate-shimmer items-center justify-center rounded-md 
                  border border-primary bg-black 
                  bg-[linear-gradient(110deg,#000103,65%,#FF6347,66%,#000103)]
@@ -18,7 +22,7 @@ const MagicButton = ({ text, className }: MagicButtonProps) => {
                  hover:animate-shimmer ${className}`}
     >
       {text}
-    </button>
+    </a>
   );
 };
 

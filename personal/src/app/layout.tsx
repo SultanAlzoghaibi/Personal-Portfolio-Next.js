@@ -3,6 +3,7 @@ import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
 import { i } from "framer-motion/client";
 import { ThemeProvider } from "./component/theme-provider";
+import  LinkButton from "./component/linkButton";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -40,8 +41,32 @@ export default function RootLayout({
           </ThemeProvider>
       </body>
 
-      <footer className='text-white p-6 text-center'>
-         Made by Sultan Alzoghabi, You better not fork my site... 👀 
+      <footer className='text-white p-6 text-center mb-10'>
+          <div className="relative flex mt-16  md:flex-row flex-col justify-between mx-5 items-center z-10">
+              <p className="md:text-base text-sm md:font-normal font-light text-white ">
+                  Copyright © 2025 Sultan Alzoghaibi
+                </p>
+        
+                <div className="flex items-center mt-4 md:gap-3 gap-6">
+                  <LinkButton
+                    text="LinkedIn"
+                    icon="tech-logos/linkedin.png"
+                    link="https://www.linkedin.com/in/sultan-alzoghaibi-3b99a0250/"
+                  />
+                  <LinkButton
+                    text="Github"
+                    icon="tech-logos/github-white-icon.webp"
+                    link="https://github.com/SultanAlzoghaibi"
+                  />
+                  <LinkButton
+                    text="Output Online"
+                    icon="tech-logos/output-onlinepngtools.png"
+                    link="/THIS-IS-A-PLACEHOLDER.pdf"
+                  />
+                  
+                </div>
+               
+              </div>
          </footer>
 
     </html>

@@ -42,9 +42,7 @@ export default function Home() {
       <div className="my-16"></div>
       <Footer />  
       {/* Future Elements */}
-      <div className="relative z-10">
-        <p className="text-white">Add more content here!</p>
-      </div>
+    
     </>
   );
 }

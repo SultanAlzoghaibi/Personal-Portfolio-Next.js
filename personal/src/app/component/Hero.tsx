@@ -16,6 +16,7 @@ const stencilFont = Saira_Stencil_One({
 
 const interFont = Inter({
   variable: "--font-saira",
+
   subsets: ["latin"],
 });
 
@@ -59,7 +60,7 @@ const Hero = () => {
       </p>
      
       <span className="flex flex-wrap gap-x-4 gap-y-4 my-4">
-      <Magicbutton text="Contact me" />
+      <Magicbutton text="Email me" link="mailto:ssultan007@icloud.com" />
       <LinkButton text="LinkedIn" icon="tech-logos/linkedin.png" link="https://www.linkedin.com/in/sultan-alzoghaibi-3b99a0250/" />
       <LinkButton text="Github" icon="tech-logos/github-white-icon.webp" link="https://github.com/SultanAlzoghaibi" />
       <LinkButton text="Output Online" icon="tech-logos/output-onlinepngtools.png" link="/THIS-IS-A-PLACEHOLDER.pdf" />
