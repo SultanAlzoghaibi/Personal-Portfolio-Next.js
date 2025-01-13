@@ -7,7 +7,7 @@ const Page = ({ params }: { params: { id: string } }) => {
 
   return (
     <div>
-        <h1 className="text-3xl text-white font-bold underline">
+        <h1 className=" text-white font-bold" >
             Project {id}
             <CardHoverEffectDemo />
         </h1>
