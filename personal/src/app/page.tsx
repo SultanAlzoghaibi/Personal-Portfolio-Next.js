@@ -17,7 +17,6 @@ export default function Home() {
    <Script src="https://kit.fontawesome.com/1b5075d03e.js" />
 
       {/* Floating Navbar */}
-      <FloatingNav navItems={navItems} />
 
       {/* Hero Section */}
       <div className="relative">

@@ -1,9 +1,9 @@
 export const navItems = [
-  { name: "Home", link: "home" },
-  { name: "About", link: "about" },
-  { name: "Projects", link: "projects" },
-  { name: "About My Site", link: "blog" },
-  { name: "Contact", link: "#contact" },
+  { name: "Home", link: "/", section: "home" },
+  { name: "About", link: "/", section: "about" },
+  { name: "Projects", link: "/", section: "projects" },
+  { name: "About My Site", link: "/myprojects/1", section: "" },
+  { name: "Contact", link: "/", section: "" },
 ];
 
 export const gridItems = [
@@ -64,7 +64,7 @@ export const projects = [
     id: 1,
     title: "Pacman",
     des: "Smart AI pathing Pacman game",
-    video: "/videos/backgroundVid.mp4", // Fixed the typo 'backroundVid' to 'backgroundVid'
+    video: "/videos/demoReplayPacmanv2.mp4", // Fixed the typo 'backroundVid' to 'backgroundVid'
     githublink: "https://github.com/SultanAlzoghaibi",
     learnMorelink: "https://github.com/SultanAlzoghaibi",
     imgtechstack: [
@@ -76,7 +76,7 @@ export const projects = [
     id: 2,
     title: "Personal Portfolio",
     des: "Next.js site that showcases my skills and projects",
-    video: "/videos/backgroundVid.mp4", // Fixed the typo 'backroundVid' to 'backgroundVid'
+    video: "/videos/demoReplayPacmanv2.mp4", // Fixed the typo 'backroundVid' to 'backgroundVid'
     githublink: "https://github.com/SultanAlzoghaibi",
     learnMorelink: "https://github.com/SultanAlzoghaibi",
     imgtechstack: [

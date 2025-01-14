@@ -9,6 +9,7 @@ import LinkButton from "./linkButton";
 
 
 export function ThreeDCardDemo({
+  id,
   title,
   description,
   video,
@@ -16,6 +17,7 @@ export function ThreeDCardDemo({
   githublink,
   learnMorelink,
 }: {
+  id: number;
   title: string;
   description: string;
   video: string;
@@ -69,14 +71,11 @@ export function ThreeDCardDemo({
           <video
             ref={videoRef}
             src={video}
-            autoPlay={isHovering} // If isHovering is true, autoPlay will be true; otherwise, it will be false.
+            autoPlay={isHovering}
             muted
             loop
             className="h-60 w-full object-cover rounded-xl"
-          />
-
-
-    
+          />  
         </CardItem>
 
         <div className="flex justify-between items-center mt-10 ">
@@ -142,8 +141,7 @@ export function ThreeDCardDemo({
                 icon="tech-logos/github-white-icon.webp"
                 link="https://github.com/SultanAlzoghaibi"
               />
-              <MagicButton text="sign up" link="http://localhost:3000/myprojects/1" />
-            </span>
+        <MagicButton text="sign up" link={`http://localhost:3000/myprojects/${id}`} /> </span>
           </CardItem>
         </div>
       </CardBody>

@@ -9,7 +9,9 @@ const Cards = () => {
       <div className="flex flex-wrap gap-10 justify-center">
         {projects.map((project) => (
           <ThreeDCardDemo
+
             key={project.id} // Using unique project id
+            id={project.id}
             title={project.title}
             description={project.des}
             video={project.video}
