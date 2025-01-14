@@ -7,22 +7,31 @@ import MagicButton from "./Magicbutton";
 import LinkButton from "../linkButton";
 
 
+const titleArray= [
+  "Research and Defining",
+  "Diagramming and Layout",
+  "Coding and Debugging",
+  "Challenges",
+  "Highlights",
+  "More Information",
+]
+
 export const HoverEffect = ({
   items,
   className,
 }: {
   items: {
-    title?: string;
-    description?: string;
+    description: string;
     photo1?: string;
     photo2?: string;
     video?: string;
-    link: string;
+    link?: string;
   }[];
   className?: string;
 }) => {
   let [hoveredIndex, setHoveredIndex] = useState<number | null>(null);
 
+  
   return (
     <div
       className={cn(
@@ -31,8 +40,10 @@ export const HoverEffect = ({
       )}
     >
       {items.map((item, idx) => (
+
+        
         <div
-          key={item.title}
+          key={idx}
           className={cn(
             "relative group block p-2 h-full w-full",
             idx < 3 ? "lg:row-span-2" : "lg:row-span-1"
@@ -61,11 +72,11 @@ export const HoverEffect = ({
             <Card>
               <div className="flex flex-col items-center justify-center text-center">
                 <img
-                  src="/tech-logos/git.png"
+                  src={idx === 0 ? "/search-alt.png" : idx === 1 ? "/workflow.png" : idx === 2 ? "/display-code.png" : ""}
                   alt="Github Logo"
                   className="h-8 w-8 mb-4"
                 />
-                <CardTitle>{item.title}</CardTitle>
+              <CardTitle idx={idx} />
                 <CardDescription>{item.description}</CardDescription>
                 <div className=" gap-4 mt-4">
                   <img
@@ -93,8 +104,8 @@ export const HoverEffect = ({
                   controls
                 />
                 <span className="flex flex-wrap gap-x-4 gap-y-4 my-4">
-                <MagicButton text="Visit Link" link={item.link} className="" />
-                <LinkButton text="Github" icon="/tech-logos/github-white-icon.webp" link={item.link} />
+              <MagicButton text="Visit Link" link={item.link || ""} className="" />
+                <LinkButton text="Github" icon="/tech-logos/github-white-icon.webp" link={item.link || ""} />
                 </span>
           
               </div>
@@ -103,11 +114,11 @@ export const HoverEffect = ({
             <Card>
               <div className="flex flex-col items-center justify-center text-center">
                 <img
-                  src="/tech-logos/git.png"
+                  src={idx === 4 ? "/sparkles.png" : idx === 3 ? "/triangle-warning.png" : ""}
                   alt="Github Logo"
                   className="h-8 w-8 mb-4"
                 />
-                <CardTitle>{item.title}</CardTitle>
+                <CardTitle idx={idx} />
                 <CardDescription>{item.description}</CardDescription>
               </div>
             </Card>
@@ -141,14 +152,14 @@ export const Card = ({
 
 export const CardTitle = ({
   className,
-  children,
+  idx,
 }: {
   className?: string;
-  children: React.ReactNode;
+  idx: number;
 }) => {
   return (
     <h4 className={cn("text-white text-3xl lgtracking-wide mt-4", className)}>
-      {children}
+      {titleArray[idx]}
     </h4>
   );
 };

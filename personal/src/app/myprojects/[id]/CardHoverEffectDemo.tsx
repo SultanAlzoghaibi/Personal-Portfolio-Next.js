@@ -1,11 +1,32 @@
 import { HoverEffect } from "../../component/ui/cardsPrjHover";
-import { projectsId } from "../../data/datadata";
+import { myProjects } from "../../data/datadata";
 
 export function CardHoverEffectDemo({ idd }: { idd: number }) {
+  // Validate the project id and ensure it exists in myProjects
+  const project = myProjects.find((proj) => proj.id === idd);
+
+  if (!project) {
+    return (
+      <div className="max-w-5xl no-underline mx-auto px-8">
+        <h1 className="heading lg:max-w-[45vw] text-white">
+          Project not found.
+        </h1>
+      </div>
+    );
+  }
+
   return (
     <div className="max-w-5xl no-underline mx-auto px-8">
-      {/* Adjusting indexing to correctly fetch the project data */}
-      <HoverEffect items={projectsId[idd - 1].projects} />
+      <h1 className="heading lg:max-w-[45vw] text-white">
+        This is my: {project.title}
+      </h1>
+
+      {/* Rendering HoverEffect only if projectInfo exists */}
+      {project.projectInfo ? (
+        <HoverEffect items={project.projectInfo} />
+      ) : (
+        <p className="text-white">No additional information available for this project.</p>
+      )}
     </div>
   );
 }

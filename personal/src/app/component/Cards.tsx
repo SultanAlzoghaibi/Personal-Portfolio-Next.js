@@ -1,5 +1,5 @@
 import React from "react";
-import { projects } from "../data/datadata"; // Importing projects from data file
+import { myProjects } from "../data/datadata"; // Importing projects from the updated data file
 import { ThreeDCardDemo } from "./ThreeDCardDemo";
 
 const Cards = () => {
@@ -7,9 +7,8 @@ const Cards = () => {
     <div className="flex justify-center items-center min-h-screen">
       {/* Cards container */}
       <div className="flex flex-wrap gap-10 justify-center">
-        {projects.map((project) => (
+        {myProjects.map((project) => (
           <ThreeDCardDemo
-
             key={project.id} // Using unique project id
             id={project.id}
             title={project.title}
