@@ -199,7 +199,7 @@ export const BentoGridItem = ({
   <div className="left-[-8] top-[-90] absolute w-full h-full ">
 <GridBackgroundDemo />  
 </div>
- <Magicbutton className="  absolute bottom-0 mb-4 mr-9 " text="learn more" />
+ <Magicbutton link="/myprojects/1" className="absolute bottom-0 mb-4 mr-9 " text="learn more" />
 </div>
 
 

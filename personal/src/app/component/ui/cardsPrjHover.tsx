@@ -82,12 +82,12 @@ export const HoverEffect = ({
                   <img
                     src={item.photo1}
                     alt="Photo 1"
-                    className="w-32 h-32 object-cover rounded-lg"
+                    className="w-64 h-32 my-5 object-cover rounded-lg"
                   />
                   <img
                     src={item.photo2}
                     alt="Photo 2"
-                    className="w-32 h-32 object-cover rounded-lg"
+                    className="w-64 h-32 object-cover rounded-lg"
                   />
                 </div>
               </div>

@@ -78,21 +78,21 @@ export const myProjects = [
         description:
           "Reaseached the real Pacman game logic to sucessfully recreate all elements of the game.",
         link: "https://stripe.com",
-        photo1: "/tech-logos/git.png",
+        photo1: "/zmyprojectsImg/myprojectsImg1/RDP1.png",
         photo2: "/path/to/photo2.jpg",
       },
       {
         description:
           "To facilate ceratain complex parts and help teammebers understand my vison, I created a Fijgam diagram for both inheritance as well as the Pacman game logic.",
         link: "https://netflix.com",
-        photo1: "/path/to/photo1.jpg",
-        photo2: "/path/to/photo2.jpg",
+        photo1: "/zmyprojectsImg/myprojectsImg1/DLP1.png",
+        photo2: "",
       },
       {
         description:
           "I contributed to ~85% of the code base, (all ecept pellets and GUI), I used the FigJab diagram to greatly speed up the implimentation of complicated parts of the game.",
         link: "https://google.com",
-        photo1: "/path/to/photo1.jpg",
+        photo1: "/zmyprojectsImg/myprojectsImg1/CDP1.png",
         photo2: "/path/to/photo2.jpg",
       },
       {

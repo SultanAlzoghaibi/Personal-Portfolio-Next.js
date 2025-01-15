@@ -79,11 +79,6 @@ export const HoverEffect = ({
                     alt="Photo 1"
                     className="w-32 h-32 object-cover rounded-lg"
                   />
-                  <img
-                    src={item.photo2 || "/path/to/default.jpg"}
-                    alt="Photo 2"
-                    className="w-32 h-32 object-cover rounded-lg"
-                  />
                 </div>
               </div>
             </Card>
