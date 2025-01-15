@@ -16,10 +16,10 @@ export function CardHoverEffectDemo({ idd }: { idd: number }) {
   }
 
   return (
-    <div className="max-w-5xl no-underline mx-auto px-8">
-      <h1 className="heading lg:max-w-[45vw] text-white">
-        This is my: {project.title}
-      </h1>
+    <div className="max-w-5xl no-underline mx-auto px-8 my-5">
+    <h1 className="heading lg:max-w-[45vw] text-center text-white mx-auto flex flex-col justify-center items-center">
+  This is my: <span className="text-primary">{project.title}</span>
+</h1>
 
       {/* Rendering HoverEffect only if projectInfo exists */}
       {project.projectInfo ? (

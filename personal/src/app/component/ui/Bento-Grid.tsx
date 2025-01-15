@@ -196,7 +196,7 @@ export const BentoGridItem = ({
 
 { id === 3 && 
 <div >
-  <div className="left-[-20] top-[-90] absolute w-full h-full ">
+  <div className="left-[-8] top-[-90] absolute w-full h-full ">
 <GridBackgroundDemo />  
 </div>
  <Magicbutton className="  absolute bottom-0 mb-4 mr-9 " text="learn more" />

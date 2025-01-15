@@ -10,6 +10,7 @@ import LinkButton from "./linkButton";
 
 export function ThreeDCardDemo({
   id,
+  idd,
   title,
   description,
   video,
@@ -18,6 +19,7 @@ export function ThreeDCardDemo({
   learnMorelink,
 }: {
   id: number;
+  idd: number;
   title: string;
   description: string;
   video: string;
@@ -141,7 +143,7 @@ export function ThreeDCardDemo({
                 icon="tech-logos/github-white-icon.webp"
                 link="https://github.com/SultanAlzoghaibi"
               />
-        <MagicButton text="sign up" link={`http://localhost:3000/myprojects/${id}`} /> </span>
+        <MagicButton text="learn more" link={`http://localhost:3000/myprojects/${idd}`} /> </span>
           </CardItem>
         </div>
       </CardBody>

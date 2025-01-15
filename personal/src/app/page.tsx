@@ -38,7 +38,7 @@ export default function Home() {
       {/* Approach Section */}
       <CanvasRevealEffectDemo />
       {/* Spacer */}
-      <div className="my-16"></div>
+
       <Footer />  
       {/* Future Elements */}
     

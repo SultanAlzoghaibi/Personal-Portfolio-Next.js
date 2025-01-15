@@ -3,6 +3,7 @@ import { myProjects } from "../data/datadata"; // Importing projects from the up
 import { ThreeDCardDemo } from "./ThreeDCardDemo";
 
 const Cards = () => {
+
   return (
     <div className="flex justify-center items-center min-h-screen">
       {/* Cards container */}
@@ -11,6 +12,7 @@ const Cards = () => {
           <ThreeDCardDemo
             key={project.id} // Using unique project id
             id={project.id}
+            idd={project.idd}
             title={project.title}
             description={project.des}
             video={project.video}

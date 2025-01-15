@@ -12,9 +12,6 @@ const Page = ({ params }: { params: { id: string } }) => {
 
   return (
     <div>
-      <h1 className="text-white font-bold">
-        Project {idd} {/* Displaying the parsed number */}
-      </h1>
       <CardHoverEffectDemo idd={idd} /> {/* Passing the parsed id (idd) */}
     </div>
   );
