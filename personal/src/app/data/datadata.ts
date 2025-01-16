@@ -99,14 +99,14 @@ export const myProjects = [
         description:
           "Due to certain delays in the course, we only had 2 weeks to learn javaFX to compltete this project, and some teamates showed the inability or low skills in to code, As a solution i made all the logic update a backedn 2 Char Array, then based that array it would update the GUI, Allowing my less experience members to not need to code in JavaFX.",
         link: "https://meta.com",
-        photo1: "/path/to/photo1.jpg",
+        photo1: "/zmyprojectsImg/myprojectsImg1/CHP1.png",
         photo2: "/path/to/photo2.jpg",
       },
       {
         description:
           "for th ghost AI, Used a HashMap<Character, Integer[]> that stored the direction (w,a,s,d) and that tile position, it will then filter out tiles that are a wall, that represent the revese direction and then compare the linear distant to the target tile to pick the best move",
         link: "https://amazon.com",
-        photo1: "/path/to/photo1.jpg",
+        photo1: "/zmyprojectsImg/myprojectsImg1/HIP1.png",
         photo2: "/path/to/photo2.jpg",
       },
       {

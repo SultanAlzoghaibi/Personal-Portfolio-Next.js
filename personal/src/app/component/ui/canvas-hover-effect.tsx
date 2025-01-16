@@ -79,6 +79,11 @@ export const HoverEffect = ({
                     alt="Photo 1"
                     className="w-32 h-32 object-cover rounded-lg"
                   />
+                  <img
+                    src={item.photo2 || "/path/to/default.jpg"}
+                    alt="Photo 2"
+                    className="w-32 h-32 object-cover rounded-lg"
+                  />
                 </div>
               </div>
             </Card>
@@ -160,7 +165,7 @@ export const CardDescription = ({
   return (
     <p
       className={cn(
-        "mt-4 text-zinc-400 tracking-wide leading-relaxed text-sm",
+     "mt-4 text-zinc-400 tracking-wide leading-relaxed text-sm",
         className
       )}
     >
