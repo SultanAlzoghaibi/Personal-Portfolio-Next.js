@@ -2,7 +2,7 @@ export const navItems = [
   { name: "Home", link: "/", section: "home" },
   { name: "About", link: "/", section: "about" },
   { name: "Projects", link: "/", section: "projects" },
-  { name: "About My Site", link: "/myprojects/1", section: "" },
+  { name: "About My Site", link: "/myprojects/2", section: "" },
   { name: "Contact", link: "/", section: "" },
 ];
 
@@ -59,12 +59,11 @@ export const gridItems = [
   },
 ];
 
-
 export const myProjects = [
   {
     id: 1,
     idd: 1,
-    title: "Pacman Game",
+    title: "LOL Game",
     des: "Pacman with Smart Ghost AI pathing based on mathematical algorithms",
     video: "/videos/demoReplayPacmanv2.mp4",
     githublink: "https://github.com/SultanAlzoghaibi",
@@ -123,7 +122,7 @@ export const myProjects = [
     idd: 2,
     title: "Personal Portfolio",
     des: "Next.js site that showcases my skills and projects",
-    video: "/videos/demoReplayPacmanv2.mp4",
+    video: "/videos/p1cardvid.mp4",
     githublink: "https://github.com/SultanAlzoghaibi",
     learnMorelink: "https://github.com/SultanAlzoghaibi",
     imgtechstack: [
@@ -138,46 +137,46 @@ export const myProjects = [
     projectInfo: [
       {
         description:
-          "A technology company that builds economic infrastructure for the internet.",
+          "Conducted research on Next.js 15 and React by reviewing the official Next.js, Tailwind CSS, and Acency UI documentation, exploring resources on YouTube, and observing the practices of software engineering students at the University of Calgary for portfolio inspiration.",
         link: "https://stripe.com",
-        photo1: "/tech-logos/git.png",
+        photo1: "/zmyprojectsImg/myprojectsImg2/RDP1.png",
         photo2: "/path/to/photo2.jpg",
       },
       {
         description:
-          "A streaming service that offers a wide variety of award-winning TV shows, movies, anime, documentaries, and more on thousands of internet-connected devices.",
+          "Created a Figma design to streamline the frontend development process and allow for design revisions before starting the codebase.",
         link: "https://netflix.com",
-        photo1: "/path/to/photo1.jpg",
+        photo1: "/zmyprojectsImg/myprojectsImg2/DLP1.png",
         photo2: "/path/to/photo2.jpg",
       },
       {
         description:
-          "A multinational technology company that specializes in Internet-related services and products.",
+          "Developed the site using a component-based architecture to enhance code readability and maintainability. Leveraged and customized online UI kits, requiring an understanding of props, array mapping, state management, Tailwind CSS, and Framer Motion.",
         link: "https://google.com",
-        photo1: "/path/to/photo1.jpg",
+        photo1: "/zmyprojectsImg/myprojectsImg2/CDP1.png",
         photo2: "/path/to/photo2.jpg",
       },
       {
         description:
-          "A technology company that focuses on building products that advance Facebook's mission of bringing the world closer together.",
+          "Encountered compatibility issues with Acency UI and various online tutorials when working with Next.js 15 and React. Adapted design goals and implemented workarounds as necessary to address these challenges.",
         link: "https://meta.com",
-        photo1: "/path/to/photo1.jpg",
+        photo1: "/zmyprojectsImg/myprojectsImg2/CHP1.png",
         photo2: "/path/to/photo2.jpg",
       },
       {
         description:
-          "A multinational technology company focusing on e-commerce, cloud computing, digital streaming, and artificial intelligence.",
+          "Coded the site to automatically generate project cards and a new info URL section by simply adding entries to the database, ensuring scalability and ease of use.",
         link: "https://amazon.com",
-        photo1: "/path/to/photo1.jpg",
+        photo1: "/zmyprojectsImg/myprojectsImg2/HIP1.png",
         photo2: "/path/to/photo2.jpg",
       },
       {
         description:
-          "A multinational technology company that develops, manufactures, licenses, supports, and sells computer software, consumer electronics, personal computers, and related services.",
+          "Performed testing and validation to ensure functionality and performance across different scenarios.",
         link: "https://microsoft.com",
         photo1: "/path/to/photo1.jpg",
         photo2: "/path/to/photo2.jpg",
       },
     ],
   },
-]
+];

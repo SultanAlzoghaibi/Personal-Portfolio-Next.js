@@ -9,8 +9,8 @@ export function CanvasRevealEffectDemo() {
     <>
      <div className="pt-20 bg-center flex items-center justify-center">
   <h1 className="heading text-white">
-   My
-    <span className="text-primary">  Approach</span>
+   My 3 step 
+    <span className="text-primary ">  Approach</span>
   </h1>
 </div>
 <div className="py-10 text-white flex flex-col lg:flex-row items-center justify-center w-full gap-4 mx-auto px-8">

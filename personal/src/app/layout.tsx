@@ -45,8 +45,8 @@ export default function RootLayout({
           
       </body>
 
-      <footer className='text-white p-6 text-center mb-10'>
-             <div className="relative flex mt-16  md:flex-row flex-col justify-between mx-5 items-center z-10">
+      <footer className="text-white pb-6 text-center mb-5 border-t-2 border-primary w-full" >
+             <div className="relative flex mt-8  md:flex-row flex-col justify-between mx-5 items-center z-10">
                      <p className="md:text-base text-sm md:font-normal font-light text-white ">
                          Copyright © 2025 Sultan Alzoghaibi
                        </p>

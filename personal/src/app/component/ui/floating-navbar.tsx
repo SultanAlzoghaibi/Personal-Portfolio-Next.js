@@ -105,7 +105,7 @@ export const FloatingNav = ({
         animate={{ y: visible ? 0 : -100, opacity: visible ? 1 : 0 }}
         transition={{ duration: 0.2 }}
         className={cn(
-          "flex fixed top-10 inset-x-0 mx-auto max-w-fit z-50 bg-black rounded-lg shadow-lg px-4 py-2 items-center space-x-4 border border-white/[0.4]",
+          "flex fixed top-5 inset-x-0 mx-auto max-w-fit z-50 bg-black rounded-lg shadow-lg px-4 py-2 items-center space-x-4 border border-white/[0.4]",
           className
         )}
       >
