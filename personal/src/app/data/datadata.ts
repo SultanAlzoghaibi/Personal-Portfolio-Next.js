@@ -63,7 +63,7 @@ export const myProjects = [
   {
     id: 1,
     idd: 1,
-    title: "LOL Game",
+    title: "Pacman Game",
     des: "Pacman with Smart Ghost AI pathing based on mathematical algorithms",
     video: "/videos/demoReplayPacmanv2.mp4",
     githublink: "https://github.com/SultanAlzoghaibi",
