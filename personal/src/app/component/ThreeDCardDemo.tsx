@@ -128,10 +128,6 @@ export function ThreeDCardDemo({
     ))}
   </div>
 </CardItem>
-        
-      
-
-
           <CardItem
             translateZ={40}
             as="div"
@@ -143,7 +139,7 @@ export function ThreeDCardDemo({
                 icon="tech-logos/github-white-icon.webp"
                 link="https://github.com/SultanAlzoghaibi"
               />
-        <MagicButton text="learn more" link={`http://localhost:3000/myprojects/${idd}`} /> </span>
+        <MagicButton text="learn more" link={`/myprojects/${idd}`} /> </span>
           </CardItem>
         </div>
       </CardBody>
