@@ -76,7 +76,7 @@ export const myProjects = [
       {
         description:
           "Reaseached the real Pacman game logic to sucessfully recreate all elements of the game.",
-        link: "https://stripe.com",
+        link: "https://github.com/SultanAlzoghaibi/Pacman_GhostsmartAI_pathing",
         photo1: "/zmyprojectsImg/myprojectsImg1/RDP1.png",
         photo2: "/path/to/photo2.jpg",
       },
@@ -130,7 +130,7 @@ export const myProjects = [
       "/tech-logos/playwright.png",
       "/tech-logos/framer-motion.png",
       "/tech-logos/nextjs.png",
-      "/tech-logos/Tailwindcss.png",
+      "/tech-logos/TailwindCSS.png",
       "/tech-logos/React.png",
       "/tech-logos/figma.png",
     ],

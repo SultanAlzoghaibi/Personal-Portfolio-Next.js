@@ -42,7 +42,7 @@ export const BentoGrid = ({
 const leftLists = [
   { name: "HTML", icon: "/tech-logos/HTML.png" },
   { name: "CSS", icon: "/tech-logos/css.webp" },
-  { name: "JavaScript", icon: "/tech-logos/javaScript.png" },
+  { name: "JavaScript", icon: "/tech-logos/javascript.png" },
   { name: "React", icon: "/tech-logos/React.png" },
   { name: "TailwindCSS", icon: "/tech-logos/TailwindCSS.png" },
   { name: "Next.js", icon: "/tech-logos/nextjs.png" },
@@ -51,7 +51,7 @@ const leftLists = [
 
 const rightLists = [
   { name: "Node.js", icon: "/tech-logos/node.png" },
-  { name: "TypeScript", icon: "/tech-logos/typeScript.png" },
+  { name: "TypeScript", icon: "/tech-logos/typescript.png" },
   { name: "Figma", icon: "/tech-logos/figma.png" },
   { name: "Python", icon: "/tech-logos/Python.png" },
   { name: "Java", icon: "/tech-logos/java.png" },
