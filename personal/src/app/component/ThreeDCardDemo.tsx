@@ -135,7 +135,7 @@ export function ThreeDCardDemo({
           <CardItem
             translateZ={40}
             as="div"
-            className="px-0 py-0 rounded-xl bg-black dark:text-black text-white text-xs font-bold"
+            className="px-0 py-0 rounded-xl dark:text-black text-white text-xs font-bold"
           >
             <span className="flex flex-wrap gap-x-4 gap-y-4 my-4">
               <LinkButton

@@ -66,11 +66,11 @@ export const myProjects = [
     title: "Pacman Game",
     des: "Pacman with Smart Ghost AI pathing based on mathematical algorithms",
     video: "/videos/demoReplayPacmanv2.mp4",
-    githublink: "https://github.com/SultanAlzoghaibi",
-    learnMorelink: "https://github.com/SultanAlzoghaibi",
+    githublink: "hhttps://github.com/SultanAlzoghaibi/Pacman_GhostsmartAI_pathing",
+    learnMorelink: "https://github.com/SultanAlzoghaibi/Pacman_GhostsmartAI_pathing",
     imgtechstack: [
       "/tech-logos/java.png",
-      "/tech-logos/javaFX.png",
+      "/tech-logos/JavaFX.png",
     ],
     projectInfo: [
       {
@@ -92,21 +92,21 @@ export const myProjects = [
           "I contributed to ~85% of the code base, (all ecept pellets and GUI), I used the FigJab diagram to greatly speed up the implimentation of complicated parts of the game.",
         link: "https://google.com",
         photo1: "/zmyprojectsImg/myprojectsImg1/CDP1.png",
-        photo2: "/path/to/photo2.jpg",
+        photo2: "",
       },
       {
         description:
           "Due to certain delays in the course, we only had 2 weeks to learn javaFX to compltete this project, and some teamates showed the inability or low skills in to code, As a solution i made all the logic update a backedn 2 Char Array, then based that array it would update the GUI, Allowing my less experience members to not need to code in JavaFX.",
         link: "https://meta.com",
         photo1: "/zmyprojectsImg/myprojectsImg1/CHP1.png",
-        photo2: "/path/to/photo2.jpg",
+        photo2: "",
       },
       {
         description:
           "for th ghost AI, Used a HashMap<Character, Integer[]> that stored the direction (w,a,s,d) and that tile position, it will then filter out tiles that are a wall, that represent the revese direction and then compare the linear distant to the target tile to pick the best move",
         link: "https://amazon.com",
         photo1: "/zmyprojectsImg/myprojectsImg1/HIP1.png",
-        photo2: "/path/to/photo2.jpg",
+        photo2: "",
       },
       {
         description:
@@ -123,15 +123,15 @@ export const myProjects = [
     title: "Personal Portfolio",
     des: "Next.js site that showcases my skills and projects",
     video: "/videos/p1cardvid.mp4",
-    githublink: "https://github.com/SultanAlzoghaibi",
-    learnMorelink: "https://github.com/SultanAlzoghaibi",
+    githublink: "https://github.com/SultanAlzoghaibi/Personal-Portfolio-Next.js",
+    learnMorelink: "https://github.com/SultanAlzoghaibi/Personal-Portfolio-Next.js",
     imgtechstack: [
       "/tech-logos/typescript.png",
       "/tech-logos/playwright.png",
       "/tech-logos/framer-motion.png",
       "/tech-logos/nextjs.png",
-      "/tech-logos/tailwindcss.png",
-      "/tech-logos/react.png",
+      "/tech-logos/Tailwindcss.png",
+      "/tech-logos/React.png",
       "/tech-logos/figma.png",
     ],
     projectInfo: [

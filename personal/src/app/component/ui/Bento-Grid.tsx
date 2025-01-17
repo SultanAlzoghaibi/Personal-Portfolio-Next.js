@@ -40,23 +40,23 @@ export const BentoGrid = ({
 };
 
 const leftLists = [
-  { name: "HTML", icon: "tech-logos/HTML.png" },
-  { name: "CSS", icon: "tech-logos/CSS.webp" },
-  { name: "JavaScript", icon: "tech-logos/JavaScript.png" },
-  { name: "React", icon: "tech-logos/React.png" },
-  { name: "TailwindCSS", icon: "tech-logos/TailwindCSS.png" },
-  { name: "Next.js", icon: "tech-logos/Nextjs.png" },
-  { name: "MongoDB", icon: "tech-logos/MongoDB.png" },
+  { name: "HTML", icon: "/tech-logos/HTML.png" },
+  { name: "CSS", icon: "/tech-logos/css.webp" },
+  { name: "JavaScript", icon: "/tech-logos/javaScript.png" },
+  { name: "React", icon: "/tech-logos/React.png" },
+  { name: "TailwindCSS", icon: "/tech-logos/TailwindCSS.png" },
+  { name: "Next.js", icon: "/tech-logos/nextjs.png" },
+  { name: "MongoDB", icon: "/tech-logos/MongoDB.png" },
 ];
 
 const rightLists = [
-  { name: "Node.js", icon: "tech-logos/Node.png" },
-  { name: "TypeScript", icon: "tech-logos/TypeScript.png" },
-  { name: "Figma", icon: "tech-logos/Figma.png" },
-  { name: "Python", icon: "tech-logos/Python.png" },
-  { name: "Java", icon: "tech-logos/Java.png" },
-  { name: "Git", icon: "tech-logos/Git.png" },
-  { name: "API", icon: "tech-logos/API.png" }, // Assuming an "API" entry.
+  { name: "Node.js", icon: "/tech-logos/node.png" },
+  { name: "TypeScript", icon: "/tech-logos/typeScript.png" },
+  { name: "Figma", icon: "/tech-logos/figma.png" },
+  { name: "Python", icon: "/tech-logos/Python.png" },
+  { name: "Java", icon: "/tech-logos/java.png" },
+  { name: "Git", icon: "/tech-logos/git.png" },
+  { name: "API", icon: "/tech-logos/api.png" }, 
 ];
 
 export const BentoGridItem = ({
@@ -138,7 +138,7 @@ export const BentoGridItem = ({
 
       {/* Centered MagicButton */}
       <div className="mt-2">
-        <LinkButton text="Github" icon="tech-logos/discord.webp" link="https://github.com/SultanAlzoghaibi" />
+        <LinkButton text="Github" icon="tech-logos/discord.webp" link="https://discord.com/users/h82luzn" />
       </div>
     </div>
   </div>
@@ -204,9 +204,6 @@ export const BentoGridItem = ({
 
 
 }
-
-
-
 
         </div>}
 
