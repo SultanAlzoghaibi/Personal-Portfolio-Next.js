@@ -95,11 +95,11 @@ export const BentoGridItem = ({
         
       <div className={`  h-full`}>
         <div className="w-full h-full absolute">
-          {img && (
+          {img && id !== 2 && (
             <img
               src={img}
               alt={img}
-              className={cn(imgClassName, "object-cover object-center")}
+              className={cn(imgClassName, "xs:opacity-30 lg:opacity-100 md:opacity-100 sm:opacity-100 object-cover object-center")}
             />
           )}
         </div>
@@ -193,13 +193,18 @@ export const BentoGridItem = ({
     </div>
   </div>
 )}
+{ id === 2 && 
+<div >
+  <img src={img} alt="img" className="w-full h-full opacity-80 sm:w-40 md:relative lg:relative lg:left-[-16] md:left-[-16] sm:absolute sm:top-0 sm:right-0 sm:opacity-80" />
+  
+</div>}
 
 { id === 3 && 
 <div >
   <div className="left-[-8] top-[-90] absolute w-full h-full ">
 <GridBackgroundDemo />  
 </div>
- <Magicbutton link="/myprojects/1" className="absolute bottom-0 mb-4 mr-9 " text="learn more" />
+ <Magicbutton link="/myprojects/2" className="absolute bottom-0 mb-4 mr-9 " text="learn more" />
 </div>
 
 

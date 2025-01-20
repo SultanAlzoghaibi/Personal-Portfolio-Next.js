@@ -77,7 +77,7 @@ const Card = ({
         {/* Title - Shows on hover with smooth opacity transition */}
         <h2
           className={`text-xl font-bold text-white opacity-0 group-hover:opacity-100 group-hover:translate-y-2 transition-all duration-300 ${
-            hovered ? "text-black" : "text-white"
+            hovered ? "text-white" : "text-black"
           }`}
         >
           {title}
@@ -85,7 +85,7 @@ const Card = ({
         {/* Description - Appears on hover */}
         <p
           className={`mt-2 text-sm text-white opacity-0 group-hover:opacity-100 group-hover:translate-y-2 transition-all duration-300 ${
-            hovered ? "text-black" : "text-white"
+            hovered ? "text-white" : "text-black"
           }`}
         >
           {description}

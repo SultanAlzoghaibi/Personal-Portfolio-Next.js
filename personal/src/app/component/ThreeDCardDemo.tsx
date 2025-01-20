@@ -137,7 +137,7 @@ export function ThreeDCardDemo({
               <LinkButton
                 text="Github"
                 icon="tech-logos/github-white-icon.webp"
-                link="https://github.com/SultanAlzoghaibi"
+                link={githublink}
               />
         <MagicButton text="learn more" link={`/myprojects/${idd}`} /> </span>
           </CardItem>

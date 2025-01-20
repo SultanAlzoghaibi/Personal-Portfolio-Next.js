@@ -8,11 +8,11 @@ import MagicButton from "./Magicbutton";
 import LinkButton from "../linkButton";
 
 const titleArray = [
-  "Research and Defining",
-  "Diagramming and Layout",
-  "Coding and Debugging",
-  "Challenges",
-  "Highlights",
+  "Research & Defining",
+  "Diagramming & Layout",
+  "Coding & Debugging",
+  "Challenges & solutions",
+  "Highlight of the project",
   "More Information",
 ];
 
@@ -64,17 +64,23 @@ export const HoverEffect = ({
               />
             )}
           </AnimatePresence>
-          {idx < 3 ? (
+          {idx < 5 ? (
             <Card>
               <div className="flex flex-col items-center justify-center text-center">
                 <img
-                  src={
-                    idx === 0
-                      ? "/search-alt.png"
-                      : idx === 1
-                      ? "/workflow.png"
-                      : "/display-code.png"
-                  }
+            src={
+              idx === 0
+                ? "/search-alt.png"
+                : idx === 1
+                ? "/workflow.png"
+                : idx === 2
+                ? "/display-code.png"
+                : idx === 3
+                ? "/triangle-warning.png"
+                : idx === 4
+                ? "/sparkles.png"  
+                : "/placeholder.png" // Default fallback
+            }
                   alt="Icon"
                   className="h-8 w-8 mb-4"
                 />
@@ -84,63 +90,43 @@ export const HoverEffect = ({
                   <ZoomableImage
                     src={item.photo1}
                     alt="Photo 1"
-                    className="w-64 h-32 my-5 object-cover rounded-lg"
                   />
                 )}
               </div>
             </Card>
-          ) : idx === 5 ? (
+          ) :  (
             <Card>
-              <div className="flex flex-col items-center justify-center text-center">
-                <h4 className="text-white font-sans font-bold lgtracking-wide mt-4">
-                  Extra Information
-                </h4>
-                {item.video && (
-                  <video
-                    src={item.video}
-                    className="w-full h-auto rounded-lg mb-4"
-                    controls
-                  />
-                )}
-                <span className="flex flex-wrap gap-x-4 gap-y-4 my-4">
-                  <MagicButton
-                    text="Visit Link"
-                    link={item.link || ""}
-                    className=""
-                  />
-                  <LinkButton
-                    text="Github"
-                    icon="/tech-logos/github-white-icon.webp"
-                    link={item.link || ""}
-                  />
-                </span>
-              </div>
-            </Card>
-          ) : (
-            <Card>
-              <div className="flex flex-col items-center justify-center text-center">
-                <img
-                  src={
-                    idx === 4
-                      ? "/sparkles.png"
-                      : idx === 3
-                      ? "/triangle-warning.png"
-                      : ""
-                  }
-                  alt="Icon"
-                  className="h-8 w-8 mb-4"
+            <div className="flex flex-col items-center justify-center text-center">
+              <h4 className="text-white font-sans font-bold lg:tracking-wide mt-4">
+                Extra Information
+              </h4>
+              {/* Iframe for video */}
+               
+                {item.photo2 === 'pass' ? <div/> : <div className="relative w-full h-0 pb-[56.25%] mt-4">
+                  <iframe
+                    src={item.photo2}
+                    className="absolute top-0 left-0 w-full h-full rounded-lg"
+                    title="Video Player"
+                    frameBorder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                    allowFullScreen
+                  ></iframe>
+                </div> }
+              
+              <span className="flex flex-wrap gap-x-4 gap-y-4 my-4">
+                <MagicButton
+                  text="Visit Link"
+                  link={item.link || ""}
+                  className=""
                 />
-                <CardTitle idx={idx} />
-                <CardDescription>{item.description}</CardDescription>
-                {item.photo1 && (
-                  <ZoomableImage
-                    src={item.photo1}
-                    alt="Photo 1"
-                    className="w-64 h-32 my-5 object-cover rounded-lg"
-                  />
-                )}
-              </div>
-            </Card>
+                <LinkButton
+                  text="Github"
+                  icon="/tech-logos/github-white-icon.webp"
+                  link={item.link || ""}
+                />
+              </span>
+            </div>
+          </Card>
           )}
         </div>
       ))}
