@@ -1,11 +1,12 @@
 import type { Metadata } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
-import { i } from "framer-motion/client";
 import { ThemeProvider } from "./component/theme-provider";
 import  LinkButton from "./component/linkButton";
 import { FloatingNav } from "./component/ui/floating-navbar";
 import { navItems } from "./data/datadata";
+import { SpeedInsights } from "@vercel/speed-insights/next"
+
 
 const geistSans = Geist({
   variable: "--font-geist-sans",

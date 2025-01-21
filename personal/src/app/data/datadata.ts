@@ -2,8 +2,7 @@ export const navItems = [
   { name: "Home", link: "/", section: "home" },
   { name: "About", link: "/", section: "about" },
   { name: "Projects", link: "/", section: "projects" },
-  { name: "About My Site", link: "/myprojects/2", section: "" },
-  { name: "Contact", link: "/", section: "" },
+  { name: "About My Site", link: "/myprojects/2", section: "" }
 ];
 
 export const gridItems = [
@@ -20,7 +19,7 @@ export const gridItems = [
   },
   {
     id: 2,
-    title: "Currently Taking a class on low-level programming",
+    title: "In a Course on Low-Level Programming",
     description: "",
     className: "lg:col-span-2 md:col-span-2 md:row-span-4 lg:min-h-[60vh]",
     imgClassName: "w-full h-full",
