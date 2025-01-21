@@ -146,6 +146,10 @@ export const BentoGridItem = ({
     
 
     { id === 3 && (
+      <>
+       <div className="left-[-8] top-[-400] absolute w-full h-full ">
+    <GridBackgroundDemo />  
+    </div>
       <div
       className={cn(
         titleClassName,
@@ -154,9 +158,7 @@ export const BentoGridItem = ({
     >
       
     <div >
-      <div className="left-[-8] top-[-400] absolute w-full h-full ">
-    <GridBackgroundDemo />  
-    </div>
+     
     <div
   className={`font-sans text-lg lg:text-2xl max-w-96 font-bold z-10 ${id === 3 ? 'sm:absolute xs:absolute xs:w-40 lg:absolute lg:w-60 lg:mb-5 lg:top-3 lg lg:text-2xl' : ''} ${id === 1 ? 'text-primary whitespace-nowrap' : 'text-white'}`}
 >
@@ -166,7 +168,7 @@ export const BentoGridItem = ({
     
      <Magicbutton link="/myprojects/2" className="absolute bottom-0 mb-4 mr-9 " text="learn more" />
     </div>
-    </div>)
+    </div></>)
     
     
     }
