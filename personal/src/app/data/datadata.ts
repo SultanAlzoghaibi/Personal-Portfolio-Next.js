@@ -19,12 +19,12 @@ export const gridItems = [
   },
   {
     id: 2,
-    title: "In a Course on Low-Level Programming",
+    title: "Currently taking Data Structures and Algorithms (cpsc 319)",
     description: "",
     className: "lg:col-span-2 md:col-span-2 md:row-span-4 lg:min-h-[60vh]",
     imgClassName: "w-full h-full",
     titleClassName: "justify-end",
-    img: "/tech-logos/C.png",
+    img: "/algo.png",
     spareImg: "",
   },
   {
@@ -88,21 +88,21 @@ export const myProjects = [
       },
       {
         description:
-          "I contributed to approximately 85% of the code base (all except pellets and GUI). I used the Figma diagram to greatly speed up the implementation of complicated parts of the game.",
+          "I contributed to approximately 85% of the code base (all except pellets and GUI). And by refering to my Figma diagram to greatly speed up the implementation of complicated parts, leaving me with a grade of 102.3%",
         link: "https://google.com",
         photo1: "/zmyprojectsImg/myprojectsImg1/CDP1.png",
         photo2: "",
       },
       {
         description:
-          "Due to certain delays in the course, we only had two weeks to learn JavaFX to complete this project. Some teammates showed a lack of ability or low skills in coding. As a solution, I made all the logic update a backend 2D character array, which would then update the GUI based on that array, allowing less experienced members to avoid needing to code in JavaFX.",
-        link: "https://meta.com",
+        "Faced with course delays and teammates’ limited JavaFX skills, I designed the GUI to sync with a backend 2D char array, simplifying contributions for less experienced members."
+        ,link: "https://meta.com",
         photo1: "/zmyprojectsImg/myprojectsImg1/CHP1.png",
         photo2: "",
       },
       {
         description:
-          "For the ghost AI, I used a HashMap<Character, Integer[]> to store the direction (w, a, s, d) and the tile position. It would then filter out tiles that are walls or represent the reverse direction, and compare the linear distance to the target tile to pick the best move.",
+          "For the ghost AI, I used a HashMap<Character, Integer[]> to store the direction (w,a,s,d) & the tile position [x,y]. It filters out invalid tiles, and compare the linear distance to the target tile to pick the best move.",
         link: "https://amazon.com",
         photo1: "/zmyprojectsImg/myprojectsImg1/HIP1.png",
         photo2: "",
@@ -111,7 +111,7 @@ export const myProjects = [
         description:
           "Learn more by clicking the button below.",
         link: "https://microsoft.com",
-        photo1: "/path/to/photo1.jpg",
+        photo1: "/zmyprojectsImg/myprojectsImg1/EIP1.png",
         photo2: "https://www.youtube.com/embed/wqhjb4PUzP4?start=4",
       },
     ],
@@ -173,8 +173,8 @@ export const myProjects = [
         description:
           "Performed testing and validation to ensure functionality and performance across different scenarios.",
         link: "https://github.com/SultanAlzoghaibi/Personal-Portfolio-Next.js",
-        photo1: "/path/to/photo1.jpg",
-        photo2: "pass",
+        photo1: "",
+        photo2: "",
       },
     ],
   },

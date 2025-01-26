@@ -96,37 +96,50 @@ export const HoverEffect = ({
             </Card>
           ) :  (
             <Card>
-            <div className="flex flex-col items-center justify-center text-center">
-              <h4 className="text-white font-sans font-bold lg:tracking-wide mt-4">
-                Extra Information
-              </h4>
-              {/* Iframe for video */}
-               
-                {item.photo2 === 'pass' ? <div/> : <div className="relative w-full h-0 pb-[56.25%] mt-4">
-                  <iframe
-                    src={item.photo2}
-                    className="absolute top-0 left-0 w-full h-full rounded-lg"
-                    title="Video Player"
-                    frameBorder="0"
-                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                    allowFullScreen
-                  ></iframe>
-                </div> }
-              
-              <span className="flex flex-wrap gap-x-4 gap-y-4 my-4">
-                <MagicButton
-                  text="Visit Link"
-                  link={item.link || ""}
-                  className=""
-                />
-                <LinkButton
-                  text="Github"
-                  icon="/tech-logos/github-white-icon.webp"
-                  link={item.link || ""}
-                />
-              </span>
-            </div>
-          </Card>
+  <div className="flex flex-col items-center justify-center text-center py-4">
+    <h4 className="text-white font-sans font-bold lg:tracking-wide mt-4">
+      Extra Information
+    </h4>
+    <div className="flex flex-col items-center justify-center text-center">
+    {/* Iframe for video */}
+    {item.photo2 && (
+      <div className="relative w-full h-0 pb-[56.25%] mt-4 ">
+        <iframe
+          src={item.photo2}
+          className="absolute top-0 left-0 w-full h-full rounded-lg"
+          title="Video Player"
+          frameBorder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+          allowFullScreen
+        ></iframe>
+      </div>
+    )}
+    {/* ZoomableImage for photo */}
+    {item.photo1 && (
+      <div className="relative w-full h-0 pb-[56.25%] my-4 ">
+        <ZoomableImage
+          src={item.photo1}
+          alt="Photo 1"
+        />
+      </div>
+    )}
+  </div>
+    {/* Buttons */}
+   
+    <span className="flex flex-wrap gap-x-4 gap-y-4 mt-4 justify-center">
+      <MagicButton
+        text="Visit Link"
+        link={item.link || ""}
+        className=""
+      />
+      <LinkButton
+        text="Github"
+        icon="/tech-logos/github-white-icon.webp"
+        link={item.link || ""}
+      />
+    </span>
+    </div>
+</Card>
           )}
         </div>
       ))}

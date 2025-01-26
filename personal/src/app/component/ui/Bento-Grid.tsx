@@ -160,7 +160,7 @@ export const BentoGridItem = ({
     <div >
      
     <div
-  className={`font-sans text-lg lg:text-2xl max-w-96 font-bold z-10 ${id === 3 ? 'sm:absolute xs:absolute xs:w-40 lg:absolute lg:w-60 lg:mb-5 lg:top-3 lg lg:text-2xl' : ''} ${id === 1 ? 'text-primary whitespace-nowrap' : 'text-white'}`}
+  className={`font-sans text-lg lg:text-2xl font-bold z-10 ${id === 3 ? 'sm:absolute xs:absolute xs:w-40 lg:absolute lg:w-60 lg:mb-5 lg:top-3 lg lg:text-2xl' : ''} ${id === 1 ? 'text-primary whitespace-nowrap' : 'text-white'}`}
 >
 
   {title}
@@ -173,7 +173,7 @@ export const BentoGridItem = ({
     
     }
 
-    { id !== 5 && id !== 3 && <div
+    { id !== 5 && id !== 3 &&  <div
           className={cn(
             titleClassName,
             "group-hover/bento:translate-x-2 transition duration-200 relative md:h-full min-h-40 flex flex-col px-5 p-5 lg:p-10"
@@ -186,9 +186,13 @@ export const BentoGridItem = ({
           </div>
           
           <div
-  className={`font-sans text-lg lg:text-3xl max-w-96 font-bold z-10 ${id === 3 ? 'sm:absolute lg:absolute lg:w-60 lg:mb-5 lg:top-3 lg lg:text-2xl' : ''} ${id === 1 ? 'text-primary whitespace-nowrap' : 'text-white'}`}
+  className={`font-sans 
+    ${id === 2 ? " lg:w-40" : ""}
+    text-lg lg:text-3xl max-w-96 font-bold z-10
+    ${id === 3 ? 'sm:absolute lg:absolute lg:w-60 lg:mb-5 lg:top-3 lg:text-2xl' : ''}
+    ${id === 1 ? 'text-primary whitespace-nowrap' : 'text-white'}
+  `}
 >
-
   {title}
 </div>
 </div>
