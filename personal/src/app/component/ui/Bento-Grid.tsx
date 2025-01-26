@@ -227,7 +227,7 @@ export const BentoGridItem = ({
 )}
 { id === 2 && 
 <div >
-  <img src={img} alt="img" className="w-full h-full opacity-80 sm:w-40 md:relative lg:relative lg:left-[-16] md:left-[-16] sm:absolute sm:top-0 sm:right-0 sm:opacity-80" />
+  <img src={img} alt="img" className="w-full h-full opacity-80 sm:w-40 sm:h-40 md:relative lg:relative lg:left-[-16] md:left-[-16] sm:absolute sm:top-0 sm:right-0 sm:opacity-80" />
   
 </div>}
 

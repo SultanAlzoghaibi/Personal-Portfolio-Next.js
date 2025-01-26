@@ -11,7 +11,7 @@ const titleArray = [
   "Research & Defining",
   "Diagramming & Layout",
   "Coding & Debugging",
-  "Challenges & solutions",
+  "Challenges & Solutions",
   "Highlight of the project",
   "More Information",
 ];
@@ -97,7 +97,7 @@ export const HoverEffect = ({
           ) :  (
             <Card>
   <div className="flex flex-col items-center justify-center text-center py-4">
-    <h4 className="text-white font-sans font-bold lg:tracking-wide mt-4">
+    <h4 className="text-white font-sans font-bold lg:tracking-wide my-4">
       Extra Information
     </h4>
     <div className="flex flex-col items-center justify-center text-center">
@@ -116,7 +116,7 @@ export const HoverEffect = ({
     )}
     {/* ZoomableImage for photo */}
     {item.photo1 && (
-      <div className="relative w-full h-0 pb-[56.25%] my-4 ">
+      <div className="relative w-full h-20 pb-40 my-4 ">
         <ZoomableImage
           src={item.photo1}
           alt="Photo 1"
@@ -126,7 +126,7 @@ export const HoverEffect = ({
   </div>
     {/* Buttons */}
    
-    <span className="flex flex-wrap gap-x-4 gap-y-4 mt-4 justify-center">
+    <span className="flex flex-wrap gap-x-4 gap-y-4 justify-center">
       <MagicButton
         text="Visit Link"
         link={item.link || ""}

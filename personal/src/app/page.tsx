@@ -19,10 +19,7 @@ export default function Home() {
       {/* Floating Navbar */}
 
       {/* Hero Section */}
-      <div className="relative">
         <Hero />
-      </div>
-
       {/* Spacer Between Sections */}
       <div className="py-10 my-32"></div>
 

@@ -1,6 +1,9 @@
 import { HoverEffect } from "../../component/ui/cardsPrjHover";
 import { myProjects } from "../../data/datadata";
 
+import LinkButton from "../../component/linkButton";
+import React from "react";
+
 export function CardHoverEffectDemo({ idd }: { idd: number }) {
   // Validate the project id and ensure it exists in myProjects
   const project = myProjects.find((proj) => proj.id === idd);
@@ -27,6 +30,9 @@ export function CardHoverEffectDemo({ idd }: { idd: number }) {
       ) : (
         <p className="text-white">No additional information available for this project.</p>
       )}
+
+     
     </div>
+    
   );
 }

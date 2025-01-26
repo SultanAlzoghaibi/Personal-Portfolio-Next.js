@@ -24,8 +24,8 @@ export function CanvasRevealEffectDemo() {
     icon="/workflow.png"
   />
   <Card
-    title="Coding"
-    description="Here, I focus on writing code! (Duh) I take time to think at a micro level 
+    title="Coding and Debugging"
+    description="I take time to think at a micro level 
     before coding, which helps me break big projects into manageable, day-by-day components."
     icon="/display-code.png"
   />

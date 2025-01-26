@@ -54,9 +54,7 @@ const Hero = () => {
       }  mb-4 `}
     >
       <p className={`${interFont.className} text-lg text-white p-btom-4 mb-5`}>
-        I'm a student at the University of Calgary, studying Natural Science with
-        a concentration in Computer Science. My goal is to graduate as a Computer
-        Science student ^_^ !!!!
+      I’m a student at the University of Calgary, enrolled in Finance, but I love studying software and programming. My goal is to graduate with a Computer Science degree. ^_^ !!!
       </p>
      
       <span className="flex flex-wrap gap-x-4 gap-y-4 my-4">

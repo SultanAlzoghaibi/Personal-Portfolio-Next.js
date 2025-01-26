@@ -19,7 +19,7 @@ export const gridItems = [
   },
   {
     id: 2,
-    title: "Currently taking Data Structures and Algorithms (cpsc 319)",
+    title: "Enrolled cpsc 319: Data Structures and Algorithms",
     description: "",
     className: "lg:col-span-2 md:col-span-2 md:row-span-4 lg:min-h-[60vh]",
     imgClassName: "w-full h-full",
@@ -110,7 +110,7 @@ export const myProjects = [
       {
         description:
           "Learn more by clicking the button below.",
-        link: "https://microsoft.com",
+        link: "https://www.youtube.com/watch?time_continue=4&v=wqhjb4PUzP4&embeds_referring_euri=https%3A%2F%2Fsultan-alzoghaibi.com%2F&source_ve_path=Mjg2NjY",
         photo1: "/zmyprojectsImg/myprojectsImg1/EIP1.png",
         photo2: "https://www.youtube.com/embed/wqhjb4PUzP4?start=4",
       },
@@ -150,14 +150,14 @@ export const myProjects = [
       },
       {
         description:
-          "Developed the site using a component-based code to increase scalibility and readibility.  Leveraged and customized online UI kits, requiring an understanding of props, array mapping, state management, Tailwind CSS, and Framer Motion.",
-        link: "https://google.com",
+          "Used databases and component-based code to have to site be scalibility without needing code.  Leveraged online UI kits, requiring an understanding of props, array mapping, state management, TailwindCSS, etc.",
+        link: "",
         photo1: "/zmyprojectsImg/myprojectsImg2/CDP1.png",
         photo2: "/path/to/photo2.jpg",
       },
       {
         description:
-          "Encountered compatibility issues with Aceternity UI and various online tutorials when working with Next.js 15 and React. Adapted design goals and implemented workarounds as necessary to address these challenges.",
+          "Encountered compatibility issues with Aceternity/Shadcn UI and various online tutorials when working with Next.js 15 and React 19. I creativly adapted design goals as workarounds to these issues.",
         link: "https://meta.com",
         photo1: "/zmyprojectsImg/myprojectsImg2/CHP1.png",
         photo2: "/path/to/photo2.jpg",
