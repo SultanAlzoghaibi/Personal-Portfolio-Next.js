@@ -39,7 +39,7 @@ export const gridItems = [
   },
   {
     id: 4,
-    title: "Helping TechStart club migrate from to Next.js",
+    title: "Helping TechStart club migrate from React to Next.js",
     description: "Currently focusing on",
     className: "lg:col-span-3 lg:row-span-2 md:col-span-4 md:row-span-3  lg:max-h-[340px] lg:min-h-[300px] md:min-h-[250px]", // Adjusted height for id: 4
     imgClassName: "absolute right-0 bottom-0 md:w-96 w-60",

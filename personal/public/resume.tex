@@ -1,0 +1,204 @@
+%-------------------------
+% Resume in Latex
+% Author: Jake Gutierrez
+% Based off of: https://github.com/sb2nov/resume
+% License : MIT
+%------------------------
+
+\documentclass[letterpaper,11pt]{article}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+\input{glyphtounicode}
+
+
+%----------FONT OPTIONS----------
+% sans-serif
+% \usepackage[sfdefault]{FiraSans}
+% \usepackage[sfdefault]{roboto}
+% \usepackage[sfdefault]{noto-sans}
+% \usepackage[default]{sourcesanspro}
+
+% serif
+% \usepackage{CormorantGaramond}
+% \usepackage{charter}
+
+
+\pagestyle{fancy}
+\fancyhf{} % clear all header and footer fields
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+% Adjust margins
+\addtolength{\oddsidemargin}{-0.5in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1in}
+\addtolength{\topmargin}{-.5in}
+\addtolength{\textheight}{1.0in}
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Sections formatting
+\titleformat{\section}{
+  \vspace{-4pt}\scshape\raggedright\large
+}{}{1em}{}[\color{black}\titlerule \vspace{3pt}]
+
+% Ensure that generate pdf is machine readable/ATS parsable
+\pdfgentounicode=1
+
+%-------------------------
+% Custom commands
+\newcommand{\resumeItem}[1]{
+  \item\small{
+    {#1 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-2pt}\item
+    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2 \\
+      \textit{\small#3} & \textit{\small #4} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubSubheading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \textit{\small#1} & \textit{\small #2} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeProjectHeading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \small#1 & #2 \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubItem}[1]{\resumeItem{#1}\vspace{-4pt}}
+
+\renewcommand\labelitemii{$\vcenter{\hbox{\tiny$\bullet$}}$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.15in, label={}]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+%-------------------------------------------
+%%%%%%  RESUME STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\begin{document}
+
+%----------HEADING----------
+% \begin{tabular*}{\textwidth}{l@{\extracolsep{\fill}}r}
+%   \textbf{\href{http://sourabhbajaj.com/}{\Large Sourabh Bajaj}} & Email : \href{mailto:sourabh@sourabhbajaj.com}{sourabh@sourabhbajaj.com}\\
+%   \href{http://sourabhbajaj.com/}{http://www.sourabhbajaj.com} & Mobile : +1-123-456-7890 \\
+% \end{tabular*}
+
+\begin{center}
+    \textbf{\Huge \scshape Jake Ryan} \\ \vspace{1pt}
+    \small 123-456-7890 $|$ \href{mailto:x@x.com}{\underline{jake@su.edu}} $|$ 
+    \href{https://linkedin.com/in/...}{\underline{linkedin.com/in/jake}} $|$
+    \href{https://github.com/...}{\underline{github.com/jake}}
+\end{center}
+
+
+%-----------EDUCATION-----------
+\section{Education}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {University of Calgary}{Calgary, AB}
+      {Bachelor of Finance, Minor in Computer Science | GPA: 3.64}{Sep. 2022 -- Dec. 2026} 
+    \resumeSubheading
+      {\textbf{Relevant Courses}}{}
+      {\parbox{\textwidth}{%
+        Programming in Python (A-), 
+        Object-Oriented Programming in Java (A+),   
+        Data Structures and Algorithms (A), 
+        Software Engineering (A), 
+        Artificial Intelligence and Machine Learning (In Progress)
+      }}{}
+  \resumeSubHeadingListEnd
+
+\vspace{-1pt}
+%-----------EXPERIENCE-----------
+\section{Experience}
+  \resumeSubHeadingListStart
+
+   \resumeSubheading
+      {Full-Stack Software Developer}{Jan 2025 -- Present}
+      {TechStart Club}{Calgary, AB}
+      \resumeItemListStart
+        \resumeItem{contributed to the migration from React to Next.js, utilizing its SSR capabilities to improve SEO and initial page load times.}
+        \resumeItem{Integrated Stripe API to handle payments, reducing transaction time by 2 minutes compared to Google Forms, leading to an enhanced user experience.}
+         \resumeItem{Implemented Server-Side Rendering (SSR) with Next.js, enhancing SEO performance by pre-rendering dynamic content on the server.}
+        \resumeItem{Collaborated within a team of five, enforcing Git best practices to ensure zero bugs were pushed to the main branch, resulting in higher code quality and smoother releases.}
+      \resumeItemListEnd
+      
+% -----------Multiple Positions Heading-----------
+%    \resumeSubSubheading
+%     {Software Engineer I}{Oct 2014 - Sep 2016}
+%     \resumeItemListStart
+%        \resumeItem{Apache Beam}
+%          {Apache Beam is a unified model for defining both batch and streaming data-parallel processing pipelines}
+%     \resumeItemListEnd
+%    \resumeSubHeadingListEnd
+%-------------------------------------------
+
+  \resumeSubHeadingListEnd
+
+
+%-----------PROJECTS-----------
+\section{Projects}
+    \resumeSubHeadingListStart
+      \resumeProjectHeading
+          {\textbf{OOP Pacman with smart ghost pathing} $|$ \emph{Java, JavaFX}}{Date -- Present}
+          \resumeItemListStart
+            \resumeItem{Researched the real Pacman game logic and successfully recreated all elements of the game.}
+            \resumeItem{Created a Figma diagram to visualize the game logic and inheritance structure for easier collaboration.}
+            \resumeItem{Contributed to  ~85\% of the codebase, handling complex parts, leaving the GUI and pellets to teammates.}
+            \resumeItem{Designed a responsive GUI to sync with a backend 2D char array, helping less experienced teammates contribute.}
+            \resumeItem{Developed ghost AI using a HashMap to store directions and tile positions, then filtering to the best move at a O(1) time complexity.}
+          \resumeItemListEnd
+      \resumeProjectHeading
+          {\textbf{Personal Portfolio} $|$ \emph{Next.js, Motion, Playwright, Typescript, Figma Tailwind CSS, Aceternity UI, React}}{Date -- Present}
+          \resumeItemListStart
+            \resumeItem{Developed a personal site using Next.js 15, TypeScript, and Aceternity UI, achieving 97\% in performance, 93\% in best practices and 91\% in SEO according to pagespeed.web.dev.}
+            \resumeItem{Designed a Figma prototype for the frontend, streamlining development and reducing style-related code changes by 90\%, accelerating UI iteration speed.}
+            \resumeItem{Enabled project card additions with dedicated URL pages without modifying the codebase by leveraging React props and Next.js Dynamic Routes, eliminating codebase updates by 100\% reduction and improving scalability for near unlimited projects.}
+          \resumeItemListEnd
+    \resumeSubHeadingListEnd
+
+
+
+%
+%-----------PROGRAMMING SKILLS-----------
+\section{Technical Skills}
+ \begin{itemize}[leftmargin=0.15in, label={}]
+    \small{\item{
+     \textbf{Languages}{: Java, TypeScript, Python, C, SQL (Postgres), JavaScript, HTML/CSS, R} \\
+     \textbf{Frameworks}{: React, Next.js, Node.js, JUnit, Aceterny UI, ShadCN UI, Material-UI, FastAPI} \\
+     \textbf{Developer Tools}{: Git, Docker, VS Code, Visual Studio, PyCharm, IntelliJ} \\
+     \textbf{Libraries}{: } \\
+    }}
+ \end{itemize}
+
+
+%-------------------------------------------
+\end{document}

@@ -153,7 +153,7 @@ export const BentoGridItem = ({
       <div
       className={cn(
         titleClassName,
-        "group-hover/bento:translate-x-2 transition duration-200 relative md:h-full min-h-40 flex flex-col px-5 p-5 lg:p-10"
+        "group-hover/bento:translate-x-2 transition mb-0 duration-200 relative md:h-full min-h-40 flex flex-col px-5 pt-5 lg:pt-10"
       )}
     >
       
@@ -232,14 +232,12 @@ export const BentoGridItem = ({
 </div>}
 
 { id === 3 && 
-<div >
-  <div className="left-[-8] top-[-90] absolute w-full h-full ">
-<GridBackgroundDemo />  
-</div>
- <Magicbutton link="/myprojects/2" className="absolute bottom-0 mb-4 mr-9 " text="learn more" />
-</div>
-
-
+  <div>
+    <div className="left-[-8] top-[-90] w-full h-full">
+      <GridBackgroundDemo />  
+    </div>
+    <Magicbutton link="/myprojects/2" className="mb-16 pb-5 mr-9 mt-[-0px]" text="learn more" />
+  </div>
 }
 
         </div>}
