@@ -25,7 +25,7 @@ export const TextGenerateEffect = ({
   const [scope, animate] = useAnimate();
 
   // Ensure that words is always a string
-  const wordsArray = (typeof words === 'string' ? words : '').split(" ");
+  const wordsArray = (typeof words === "string" ? words : "").split(" ");
 
   useEffect(() => {
     animate(
@@ -70,9 +70,7 @@ export const TextGenerateEffect = ({
   return (
     <div className={cn(`font-bold`, className)}>
       <div className="my-4">
-        <div className="flex">
-          {renderWords()}
-        </div>
+        <div className="flex">{renderWords()}</div>
       </div>
     </div>
   );
