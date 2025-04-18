@@ -1,6 +1,5 @@
 import { CardHoverEffectDemo } from "./CardHoverEffectDemo";
 import React from "react";
-import LinkButton from "../../component/linkButton";
 
 const Page = ({ params }: { params: { id: string } }) => {
   const { id } = params;

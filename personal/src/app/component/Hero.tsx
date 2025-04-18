@@ -16,7 +16,6 @@ const stencilFont = Saira_Stencil_One({
 
 const interFont = Inter({
   variable: "--font-saira",
-
   subsets: ["latin"],
 });
 
@@ -25,39 +24,35 @@ const Hero = () => {
 
   useEffect(() => {
     const timer = setTimeout(() => {
-      setFadeIn(true); // Trigger the fade-in effect after 2 seconds
+      setFadeIn(true);
     }, 2000);
 
     return () => clearTimeout(timer);
   }, []);
 
   return (
-    <div className="relative" id="home">
+    <div className="relative min-h-[85vh]" id="home">
       {/* Background video */}
       <div className="absolute inset-0 -z-15">
         <BackgroundVid1 />
       </div>
 
       {/* Content */}
-      <div className="relative flex flex-col items-start lg:max-w-[800px] md:max-w-[800px] sm:max-w-[500px] max-w-[500px]  justify-start pt-20  pl-[50px]">
-        {/* Title text with generate effect */}
+      <div className="relative flex flex-col items-start justify-start pt-20 pl-[50px] max-w-[500px] sm:max-w-[500px] md:max-w-[800px] lg:max-w-[800px]">
         <TextGenerateEffect
-          className="font-stencilFont text-[70px] font-extrabold leading-none  lg: -right-[50px] "
+          className="font-stencilFont text-[70px] font-extrabold leading-none"
           words="Welcome to my site! Sultan Alzoghaibi"
         />
 
-        {/* Smaller text underneath with fade-in effect */}
         <div
           className={`max-w-[550px] transition-opacity duration-1000 ${
             fadeIn ? "opacity-100" : "opacity-0"
-          }  mb-4 `}
+          } mb-4`}
         >
-          <p
-            className={`${interFont.className} text-lg text-white p-btom-4 mb-5`}
-          >
-            I’m a student at the University of Calgary, enrolled in Finance, but
-            I love studying software and programming. My goal is to graduate
-            with a Computer Science degree. ^_^ !!!
+          <p className={`${interFont.className} text-lg text-white mb-5`}>
+            🇨🇦 From Vancouver | 🏫 Computer Science student at the University of
+            Calgary. Interested in distributed systems, scalable architecture,
+            cloud infrastructure, and API design.
           </p>
 
           <span className="flex flex-wrap gap-x-4 gap-y-4 my-4">
@@ -73,14 +68,12 @@ const Hero = () => {
               link="https://github.com/SultanAlzoghaibi"
             />
             <LinkButton
-              text="resume"
+              text="Resume"
               icon="tech-logos/output-onlinepngtools.png"
               link="/Sultan-Alzoghaibi-Resume.pdf"
             />
           </span>
         </div>
-
-        {/* Button */}
       </div>
     </div>
   );
