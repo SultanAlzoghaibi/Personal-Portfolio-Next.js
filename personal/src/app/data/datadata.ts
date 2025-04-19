@@ -19,12 +19,12 @@ export const gridItems = [
   },
   {
     id: 2,
-    title: "Enrolled cpsc 319: Data Structures and Algorithms",
+    title: "Looking for an internship  for Fall 2025",
     description: "",
     className: "lg:col-span-2 md:col-span-2 md:row-span-4 lg:min-h-[60vh]",
     imgClassName: "w-full h-full",
     titleClassName: "justify-end",
-    img: "/algo.png",
+    img: "/tech-logos/internship.png",
     spareImg: "",
   },
   {
@@ -40,13 +40,13 @@ export const gridItems = [
   },
   {
     id: 4,
-    title: "Helping TechStart club migrate from React to Next.js",
+    title: "building a Spring Boot + gRPC distributed system",
     description: "Currently focusing on",
     className:
       "lg:col-span-3 lg:row-span-2 md:col-span-4 md:row-span-3  lg:max-h-[340px] lg:min-h-[300px] md:min-h-[250px]", // Adjusted height for id: 4
     imgClassName: "absolute right-0 bottom-0 md:w-96 w-60",
     titleClassName: "justify-center md:justify-start lg:justify-center",
-    img: "/tech-logos/nextjs.png",
+    img: "/tech-logos/grpc.png",
     spareImg: "test.png",
   },
   {
@@ -78,6 +78,7 @@ export const myProjects = [
       "/tech-logos/docker.webp",
       "/tech-logos/ECS.png",
       "/tech-logos/fargate.png",
+      "/tech-logos/cloudwatch.png",
     ],
     projectInfo: [
       {
@@ -96,7 +97,7 @@ export const myProjects = [
       },
       {
         description:
-          "This project exposed the limits of AI tools—debugging race conditions, ECS permissions, and Docker issues required much more hands-on problem solving with breakpoints, latency timers, CloudWatch, and manual testing.",
+          "This project exposed the limits of Error messages —debugging race conditions, ECS permissions, and Docker issues required much more hands-on problem solving with breakpoints, latency timers, CloudWatch, and manual testing.",
         link: "",
         photo1: "/zmyprojectsImg/myprojectsImg3/3.png",
         photo2: "",

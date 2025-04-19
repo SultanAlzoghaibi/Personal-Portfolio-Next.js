@@ -5,12 +5,11 @@ const RecentProjects = () => {
   return (
     <div id="projects" className="space-y-10">
       {/* Section Heading */}
-      <div className="pt-20 bg-center flex items-center justify-center text-center">
+      <div className="pt-20">
         <h1 className="heading text-white text-4xl sm:text-5xl font-bold">
           My Recent <span className="text-primary">Projects</span>
         </h1>
       </div>
-
       {/* Cards */}
       <Cards />
     </div>

@@ -195,7 +195,7 @@ export const BentoGridItem = ({
 
               <div
                 className={`font-sans 
-    ${id === 2 ? " lg:w-40" : ""}
+    ${id === 2 ? " lg:w-50 md:50 sm:w-50" : ""}
     text-lg lg:text-3xl max-w-96 font-bold z-10
     ${
       id === 3
@@ -247,10 +247,11 @@ export const BentoGridItem = ({
             )}
             {id === 2 && (
               <div>
+                <div className="mb-4"> </div>
                 <img
                   src={img}
                   alt="img"
-                  className="w-full h-full opacity-80 sm:w-40 sm:h-40 md:relative lg:relative lg:left-[-16] md:left-[-16] sm:absolute sm:top-0 sm:right-0 sm:opacity-80"
+                  className="w-full h-full opacity-80 sm:w-40 sm:h-40 md:relative lg:relative"
                 />
               </div>
             )}

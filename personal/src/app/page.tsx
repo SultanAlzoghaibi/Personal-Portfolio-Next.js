@@ -12,15 +12,17 @@ export default function Home() {
   return (
     <>
       <Script src="https://kit.fontawesome.com/1b5075d03e.js" />
-      <div className="mx-auto max-w-6xl px-4 space-y-16 gap-12">
+
+      <Hero />
+      <div className="py-4"> </div>
+      <div className="mx-8 px-8 space-y-16 gap-12">
         {/* Apply consistent vertical spacing */}
-        <Hero />
         <RecentProjects />
         <div className="py-1"> </div>
         <Grid />
         <CanvasRevealEffectDemo />
-        <Footer />
       </div>
+      <Footer />
     </>
   );
 }

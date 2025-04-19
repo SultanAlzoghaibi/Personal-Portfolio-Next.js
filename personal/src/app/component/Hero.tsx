@@ -27,7 +27,7 @@ const Hero = () => {
   return (
     <div className="relative min-h-[85vh]" id="home">
       {/* Background video */}
-      <div className="absolute inset-0 -z-15">
+      <div className="absolute  inset-0 -z-15">
         <BackgroundVid1 />
       </div>
 
