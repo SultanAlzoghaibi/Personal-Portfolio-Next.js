@@ -2,16 +2,16 @@ export const navItems = [
   { name: "Home", link: "/", section: "home" },
   { name: "About", link: "/", section: "about" },
   { name: "Projects", link: "/", section: "projects" },
-  { name: "About My Site", link: "/myprojects/2", section: "" }
+  { name: "About My Site", link: "/myprojects/2", section: "" },
 ];
 
 export const gridItems = [
-
   {
     id: 1,
     title: "My tech stack",
     description: "I constantly try to improve",
-    className: "lg:col-span-3 md:col-span-4 md:row-span-4  lg:min-h-[60vh] sm:min-h-[50vh] xs:min-h-[60vh]",
+    className:
+      "lg:col-span-3 md:col-span-4 md:row-span-4  lg:min-h-[60vh] sm:min-h-[50vh] xs:min-h-[60vh]",
     imgClassName: "",
     titleClassName: "justify-center",
     img: "",
@@ -31,7 +31,8 @@ export const gridItems = [
     id: 3,
     title: "This site was built with Next.js",
     description: "",
-    className: "lg:col-span-2 lg:row-span-1 md:col-span-2 md:row-span-2 lg:max-h-[150px] lg:min-h-[150px] md:min-h-[180px] " , // Increased min height
+    className:
+      "lg:col-span-2 lg:row-span-1 md:col-span-2 md:row-span-2 lg:max-h-[150px] lg:min-h-[150px] md:min-h-[180px] ", // Increased min height
     imgClassName: "",
     titleClassName: "justify-start",
     img: "",
@@ -41,7 +42,8 @@ export const gridItems = [
     id: 4,
     title: "Helping TechStart club migrate from React to Next.js",
     description: "Currently focusing on",
-    className: "lg:col-span-3 lg:row-span-2 md:col-span-4 md:row-span-3  lg:max-h-[340px] lg:min-h-[300px] md:min-h-[250px]", // Adjusted height for id: 4
+    className:
+      "lg:col-span-3 lg:row-span-2 md:col-span-4 md:row-span-3  lg:max-h-[340px] lg:min-h-[300px] md:min-h-[250px]", // Adjusted height for id: 4
     imgClassName: "absolute right-0 bottom-0 md:w-96 w-60",
     titleClassName: "justify-center md:justify-start lg:justify-center",
     img: "/tech-logos/nextjs.png",
@@ -51,7 +53,8 @@ export const gridItems = [
     id: 5,
     title: "Want to do a hackathon or Leetcode together?",
     description: "",
-    className: "lg:col-span-2 lg:row-span-1 md:col-span-2 md:row-span-1 lg:max-h-[150px] lg:min-h-[150px] md:min-h-[130px]", // Explicit height for id: 5
+    className:
+      "lg:col-span-2 lg:row-span-1 md:col-span-2 md:row-span-1 lg:max-h-[150px] lg:min-h-[150px] md:min-h-[130px]", // Explicit height for id: 5
     imgClassName: "",
     titleClassName: "justify-center md:max-w-full max-w-60 text-center",
     spareImg: "",
@@ -60,17 +63,71 @@ export const gridItems = [
 
 export const myProjects = [
   {
+    id: 3,
+    idd: 3,
+    title: "Horizontally Scaling Distributed System",
+    des: "Distributed matchmaking system with dynamic GameServer warm pooling, multithreaded socket handling, and AWS ECS deployment.",
+    video: "/videos/project-porfshocase.mp4", // Optional: replace with real demo path
+    githublink:
+      "https://github.com/SultanAlzoghaibi/horizonatally_Scalling_DistributedSystem_ECS-Docker", // replace with actual repo if you have one
+    learnMorelink:
+      "https://github.com/SultanAlzoghaibi/Scalable-Matchmaking-System",
+    imgtechstack: [
+      "/tech-logos/java.png",
+      "/tech-logos/javafx.png",
+      "/tech-logos/docker.webp",
+      "/tech-logos/ECS.png",
+      "/tech-logos/fargate.png",
+    ],
+    projectInfo: [
+      {
+        description:
+          "Deployed both SearchServer and GameServer containers on AWS ECS, enabling horizontal scaling with zero matchmaking performance bottlenecks under load.",
+        link: "",
+        photo1: "/zmyprojectsImg/myprojectsImg3/aws_ecs_architecture.png",
+        photo2: "",
+      },
+      {
+        description:
+          "Implemented dynamic warm pooling using a `Queue<String>` of pre-spun GameServer ECS task IPs to reduce matchmaking latency by 98% — from 20s to 0.4s.",
+        link: "",
+        photo1: "/zmyprojectsImg/myprojectsImg3/warm_pool_diagram.png",
+        photo2: "",
+      },
+      {
+        description:
+          "Used thread-based `HashMap<String, Queue<Player>>` to enable scalable matchmaking queues by game mode. Each SearchServer thread listens for clients independently.",
+        link: "",
+        photo1: "/zmyprojectsImg/myprojectsImg3/threaded_queues.png",
+        photo2: "",
+      },
+      {
+        description:
+          "Created a real-time chat system over a separate socket server, supporting simultaneous multiplayer gameplay and global messaging.",
+        link: "",
+        photo1: "/zmyprojectsImg/myprojectsImg3/chat_system_preview.png",
+        photo2: "",
+      },
+      {
+        description:
+          "Demo recorded on 4 local devices simulating player connections and game spawning to showcase system responsiveness.",
+        link: "",
+        photo1: "/zmyprojectsImg/myprojectsImg3/demo_clip.png",
+        photo2: "/videos/matchmakingDemo.mp4",
+      },
+    ],
+  },
+  {
     id: 1,
     idd: 1,
     title: "Pacman Game",
     des: "Pacman with Smart Ghost AI pathing based on mathematical algorithms",
     video: "/videos/demoReplayPacmanv2.mp4",
-    githublink: "https://github.com/SultanAlzoghaibi/Pacman_GhostsmartAI_pathing",
-    learnMorelink: "https://github.com/SultanAlzoghaibi/Pacman_GhostsmartAI_pathing",
-    imgtechstack: [
-      "/tech-logos/java.png",
-      "/tech-logos/JavaFX.png",
-    ],
+    githublink:
+      "https://github.com/SultanAlzoghaibi/Pacman_GhostsmartAI_pathing",
+    learnMorelink:
+      "https://github.com/SultanAlzoghaibi/Pacman_GhostsmartAI_pathing",
+    imgtechstack: ["/tech-logos/java.png", "/tech-logos/JavaFX.png"],
     projectInfo: [
       {
         description:
@@ -95,8 +152,8 @@ export const myProjects = [
       },
       {
         description:
-        "Faced with course delays and teammates’ limited JavaFX skills, I designed the GUI to sync with a backend 2D char array, simplifying contributions for less experienced members."
-        ,link: "https://meta.com",
+          "Faced with course delays and teammates’ limited JavaFX skills, I designed the GUI to sync with a backend 2D char array, simplifying contributions for less experienced members.",
+        link: "https://meta.com",
         photo1: "/zmyprojectsImg/myprojectsImg1/CHP1.png",
         photo2: "",
       },
@@ -108,8 +165,7 @@ export const myProjects = [
         photo2: "",
       },
       {
-        description:
-          "Learn more by clicking the button below.",
+        description: "Learn more by clicking the button below.",
         link: "https://www.youtube.com/watch?time_continue=4&v=wqhjb4PUzP4&embeds_referring_euri=https%3A%2F%2Fsultan-alzoghaibi.com%2F&source_ve_path=Mjg2NjY",
         photo1: "/zmyprojectsImg/myprojectsImg1/EIP1.png",
         photo2: "https://www.youtube.com/embed/wqhjb4PUzP4?start=4",
@@ -122,8 +178,10 @@ export const myProjects = [
     title: "Personal Portfolio",
     des: "Next.js site that showcases my skills and projects",
     video: "/videos/p1cardvid.mp4",
-    githublink: "https://github.com/SultanAlzoghaibi/Personal-Portfolio-Next.js",
-    learnMorelink: "https://github.com/SultanAlzoghaibi/Personal-Portfolio-Next.js",
+    githublink:
+      "https://github.com/SultanAlzoghaibi/Personal-Portfolio-Next.js",
+    learnMorelink:
+      "https://github.com/SultanAlzoghaibi/Personal-Portfolio-Next.js",
     imgtechstack: [
       "/tech-logos/typescript.png",
       "/tech-logos/playwright.png",

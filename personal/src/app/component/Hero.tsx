@@ -3,16 +3,10 @@ import React, { useEffect, useState } from "react";
 import BackgroundVid1 from "./backgroundvid1";
 import { Inter } from "next/font/google";
 import { TextGenerateEffect } from "./ui/TextGenerateEffect";
-import { Saira_Stencil_One } from "next/font/google";
 import Magicbutton from "./ui/Magicbutton";
 import LinkButton from "./linkButton";
 
-const stencilFont = Saira_Stencil_One({
-  variable: "--font-saira",
-  subsets: ["latin"],
-  display: "swap",
-  weight: "400",
-});
+// Removed unused stencilFont variable
 
 const interFont = Inter({
   variable: "--font-saira",
