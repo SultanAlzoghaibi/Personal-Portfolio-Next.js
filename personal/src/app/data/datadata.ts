@@ -74,7 +74,7 @@ export const myProjects = [
       "https://github.com/SultanAlzoghaibi/Scalable-Matchmaking-System",
     imgtechstack: [
       "/tech-logos/java.png",
-      "/tech-logos/javafx.png",
+      "/tech-logos/JavaFX.png",
       "/tech-logos/docker.webp",
       "/tech-logos/ECS.png",
       "/tech-logos/fargate.png",
