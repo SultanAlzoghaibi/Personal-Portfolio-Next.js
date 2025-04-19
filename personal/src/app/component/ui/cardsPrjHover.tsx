@@ -41,9 +41,7 @@ export const HoverEffect = ({
       {items.map((item, idx) => (
         <div
           key={idx}
-          className={cn(
-            "relative group block p-2 h-full w-full lg:row-span-2"
-          )}
+          className={cn("relative group block p-2 h-full w-full lg:row-span-2")}
           onMouseEnter={() => setHoveredIndex(idx)}
           onMouseLeave={() => setHoveredIndex(null)}
         >
@@ -68,78 +66,86 @@ export const HoverEffect = ({
             <Card>
               <div className="flex flex-col items-center justify-center text-center">
                 <img
-            src={
-              idx === 0
-                ? "/search-alt.png"
-                : idx === 1
-                ? "/workflow.png"
-                : idx === 2
-                ? "/display-code.png"
-                : idx === 3
-                ? "/triangle-warning.png"
-                : idx === 4
-                ? "/sparkles.png"  
-                : "/placeholder.png" // Default fallback
-            }
+                  src={
+                    idx === 0
+                      ? "/search-alt.png"
+                      : idx === 1
+                      ? "/workflow.png"
+                      : idx === 2
+                      ? "/display-code.png"
+                      : idx === 3
+                      ? "/triangle-warning.png"
+                      : idx === 4
+                      ? "/sparkles.png"
+                      : "/placeholder.png" // Default fallback
+                  }
                   alt="Icon"
                   className="h-8 w-8 mb-4"
                 />
                 <CardTitle idx={idx} />
                 <CardDescription>{item.description}</CardDescription>
                 {item.photo1 && (
-                  <ZoomableImage
-                    src={item.photo1}
-                    alt="Photo 1"
-                  />
+                  <ZoomableImage src={item.photo1} alt="Photo 1" />
                 )}
               </div>
             </Card>
-          ) :  (
+          ) : (
             <Card>
-  <div className="flex flex-col items-center justify-center text-center py-4">
-    <h4 className="text-white font-sans font-bold lg:tracking-wide my-4">
-      Extra Information
-    </h4>
-    <div className="flex flex-col items-center justify-center text-center">
-    {/* Iframe for video */}
-    {item.photo2 && (
-      <div className="relative w-full h-0 pb-[56.25%] mt-4 ">
-        <iframe
-          src={item.photo2}
-          className="absolute top-0 left-0 w-full h-full rounded-lg"
-          title="Video Player"
-          frameBorder="0"
-          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-          allowFullScreen
-        ></iframe>
-      </div>
-    )}
-    {/* ZoomableImage for photo */}
-    {item.photo1 && (
-      <div className="relative w-full h-20 pb-40 my-4 ">
-        <ZoomableImage
-          src={item.photo1}
-          alt="Photo 1"
-        />
-      </div>
-    )}
-  </div>
-    {/* Buttons */}
-   
-    <span className="flex flex-wrap gap-x-4 gap-y-4 justify-center">
-      <MagicButton
-        text="Visit Link"
-        link={item.link || ""}
-        className=""
-      />
-      <LinkButton
-        text="Github"
-        icon="/tech-logos/github-white-icon.webp"
-        link={item.link || ""}
-      />
-    </span>
-    </div>
-</Card>
+              <div className="flex flex-col items-center justify-center text-center py-4">
+                <h4 className="text-white font-sans font-bold lg:tracking-wide my-4">
+                  Extra Information
+                </h4>
+
+                <div className="flex flex-col items-center justify-center text-center w-full">
+                  {/* Video (photo2) */}
+                  {item.photo2 && (
+                    <div className="relative w-full pt-[56.25%] mt-4">
+                      <iframe
+                        src={item.photo2}
+                        className="absolute top-0 left-0 w-full h-full rounded-lg"
+                        title="Video Player"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                        allowFullScreen
+                        style={{ border: "none" }}
+                      />
+                    </div>
+                  )}
+
+                  {/* Either image or video for photo1 */}
+                  {item.photo1 &&
+                    (item.photo1.includes("youtube.com/embed") ? (
+                      <div className="relative w-full pt-[56.25%] mt-4">
+                        <iframe
+                          src={item.photo1}
+                          className="absolute top-0 left-0 w-full h-full rounded-lg"
+                          title="Video Player"
+                          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                          allowFullScreen
+                          style={{ border: "none" }}
+                        />
+                      </div>
+                    ) : (
+                      <div className="relative w-full my-4">
+                        <ZoomableImage src={item.photo1} alt="Photo 1" />
+                      </div>
+                    ))}
+                </div>
+
+                {/* Buttons */}
+                <span className="flex flex-wrap gap-x-4 gap-y-4 justify-center mt-6">
+                  <MagicButton
+                    text="Visit Link"
+                    link={item.link || ""}
+                    className=""
+                  />
+                  <LinkButton
+                    text="Github"
+                    icon="/tech-logos/github-white-icon.webp"
+                    link={item.link || ""}
+                  />
+                </span>
+              </div>
+            </Card>
           )}
         </div>
       ))}
