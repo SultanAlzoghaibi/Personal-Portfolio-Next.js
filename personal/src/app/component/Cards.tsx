@@ -4,20 +4,23 @@ import { ThreeDCardDemo } from "./ThreeDCardDemo";
 
 const Cards = () => {
   return (
-    <div className="grid grid-cols-1 sm:grid-cols-2 gap-10 max-w-6xl w-full px-8 mx-auto">
-      {myProjects.map((project) => (
-        <ThreeDCardDemo
-          key={project.id}
-          id={project.id}
-          idd={project.idd}
-          title={project.title}
-          description={project.des}
-          video={project.video}
-          githublink={project.githublink}
-          learnMorelink={project.learnMorelink}
-          imgtechstack={project.imgtechstack}
-        />
-      ))}
+    <div className="flex justify-left items-left min-h-screen">
+      {/* Cards container */}
+      <div className="flex flex-wrap gap-10 justify-center">
+        {myProjects.map((project) => (
+          <ThreeDCardDemo
+            key={project.id} // Using unique project id
+            id={project.id}
+            idd={project.idd}
+            title={project.title}
+            description={project.des}
+            video={project.video}
+            githublink={project.githublink}
+            learnMorelink={project.learnMorelink} // Pass the learnMorelink
+            imgtechstack={project.imgtechstack}
+          />
+        ))}
+      </div>
     </div>
   );
 };

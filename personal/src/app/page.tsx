@@ -15,7 +15,7 @@ export default function Home() {
 
       <Hero />
       <div className="py-4"> </div>
-      <div className="mx-8 px-8 space-y-16 gap-12">
+      <div className=" px-2 space-y-16 gap-12">
         {/* Apply consistent vertical spacing */}
         <RecentProjects />
         <div className="py-1"> </div>

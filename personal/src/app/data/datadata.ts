@@ -66,7 +66,7 @@ export const myProjects = [
     id: 3,
     idd: 3,
     title: "Horizontally Scaling Distributed System",
-    des: "Distributed matchmaking system with dynamic GameServer warm pooling, multithreaded socket handling, and AWS ECS deployment.",
+    des: "AWS ECS auto‑scaling matchmaking: dynamic servers, warm pools & multithreaded sockets",
     video: "/videos/project-porfshocase.mp4", // Optional: replace with real demo path
     githublink:
       "https://github.com/SultanAlzoghaibi/horizonatally_Scalling_DistributedSystem_ECS-Docker", // replace with actual repo if you have one

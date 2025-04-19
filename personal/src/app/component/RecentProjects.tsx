@@ -11,7 +11,9 @@ const RecentProjects = () => {
         </h1>
       </div>
       {/* Cards */}
-      <Cards />
+      <div>
+        <Cards />
+      </div>
     </div>
   );
 };
