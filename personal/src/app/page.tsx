@@ -16,7 +16,7 @@ export default function Home() {
         {/* Apply consistent vertical spacing */}
         <Hero />
         <RecentProjects />
-        <div className="py-1"></div>
+        <div className="py-1"> </div>
         <Grid />
         <CanvasRevealEffectDemo />
         <Footer />

@@ -82,37 +82,37 @@ export const myProjects = [
     projectInfo: [
       {
         description:
-          "Deployed both SearchServer and GameServer containers on AWS ECS, enabling horizontal scaling with zero matchmaking performance bottlenecks under load.",
+          "Started with a turn-based game tutorial, then self-built Docker, WebSockets, and ECS Fargate integration—drawing from various sources and a Pason Tech Lead.",
         link: "",
-        photo1: "/zmyprojectsImg/myprojectsImg3/aws_ecs_architecture.png",
+        photo1: "/zmyprojectsImg/myprojectsImg3/1.png",
         photo2: "",
       },
       {
         description:
-          "Implemented dynamic warm pooling using a `Queue<String>` of pre-spun GameServer ECS task IPs to reduce matchmaking latency by 98% — from 20s to 0.4s.",
+          "Initially diagrammed the GameServer flow, then restructured the system with a SearchServer as a matchmaking layer to connect players and redirect them to available GameServers.",
         link: "",
-        photo1: "/zmyprojectsImg/myprojectsImg3/warm_pool_diagram.png",
+        photo1: "/zmyprojectsImg/myprojectsImg3/2.png",
         photo2: "",
       },
       {
         description:
-          "Used thread-based `HashMap<String, Queue<Player>>` to enable scalable matchmaking queues by game mode. Each SearchServer thread listens for clients independently.",
+          "This project exposed the limits of AI tools—debugging race conditions, ECS permissions, and Docker issues required much more hands-on problem solving with breakpoints, latency timers, CloudWatch, and manual testing.",
         link: "",
-        photo1: "/zmyprojectsImg/myprojectsImg3/threaded_queues.png",
+        photo1: "/zmyprojectsImg/myprojectsImg3/3.png",
         photo2: "",
       },
       {
         description:
-          "Created a real-time chat system over a separate socket server, supporting simultaneous multiplayer gameplay and global messaging.",
+          "The system architecture required rethinking early approaches. I first used a tick-rate scheduler for matchmaking but switched to an event-driven thread model after facing race conditions and high CPU usage.",
         link: "",
-        photo1: "/zmyprojectsImg/myprojectsImg3/chat_system_preview.png",
+        photo1: "/zmyprojectsImg/myprojectsImg3/4.png",
         photo2: "",
       },
       {
         description:
-          "Demo recorded on 4 local devices simulating player connections and game spawning to showcase system responsiveness.",
+          "The highlight was deploying a dynamic warm pooling system that cut matchmaking latency by 98% (20s → 0.4s). Its modular design decouples SearchServer from GameServer, enabling game logic changes without affecting matchmaking—showcasing scalable, maintainable architecture.",
         link: "",
-        photo1: "/zmyprojectsImg/myprojectsImg3/demo_clip.png",
+        photo1: "/zmyprojectsImg/myprojectsImg3/5.png",
         photo2: "/videos/matchmakingDemo.mp4",
       },
     ],
