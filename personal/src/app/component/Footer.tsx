@@ -6,9 +6,9 @@ import { Cover } from "./ui/cover";
 const Footer = () => {
   return (
     <>
-      <section className="relative w-full pt-24 mt-10 pb-10" id="contact">
+      <section className="relative w-full pt-48  mt-10  pb-32" id="contact">
         {/* Grid Background */}
-        <div className="absolute top-0  left-0 right-0 bottom-0 z-0">
+        <div className="absolutetop-[-1]  left-0 right-0 bottom-0 z-0">
           <GridBackgroundDemo />
         </div>
         {/* Footer content */}
