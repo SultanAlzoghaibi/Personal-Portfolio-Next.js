@@ -119,7 +119,7 @@ export const myProjects = [
       {
         description: "Learn more by clicking the button below.",
         link: "https://github.com/SultanAlzoghaibi/horizonatally_Scalling_DistributedSystem_ECS-Docker",
-        photo1: "https://www.youtube.com/embed/72xiK4MXEDE?si=KfVED6PiAb5KenuU",
+        photo1: "",
         photo2: "https://www.youtube.com/embed/TD56ZpvX434?si=mdYS3t_mDkooW8U",
       },
     ],
