@@ -4,7 +4,7 @@ import { ThreeDCardDemo } from "./ThreeDCardDemo";
 
 const Cards = () => {
   return (
-    <div className="flex justify-left items-left min-h-screen">
+    <div className="flex justify-center items-center min-h-screen">
       {/* Cards container */}
       <div className="flex flex-wrap gap-10 justify-center">
         {myProjects.map((project) => (

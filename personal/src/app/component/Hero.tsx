@@ -32,9 +32,9 @@ const Hero = () => {
       </div>
 
       {/* Content */}
-      <div className="relative flex flex-col items-start justify-start pt-20 pl-[50px] max-w-[500px] sm:max-w-[500px] md:max-w-[800px] lg:max-w-[800px]">
+      <div className="relative flex flex-col items-start  justify-start pt-20 pl-[50px] max-w-[500px] sm:max-w-[500px] md:max-w-[1200px] lg:max-w-[1200px] ">
         <TextGenerateEffect
-          className="font-stencilFont text-[70px] font-extrabold leading-none"
+          className="font-stencilFont sm:text-[70px] xs:text-[70px] lg:text-[100px] font-extrabold leading-none"
           words="Welcome to my site! Sultan Alzoghaibi"
         />
 
@@ -43,7 +43,7 @@ const Hero = () => {
             fadeIn ? "opacity-100" : "opacity-0"
           } mb-4`}
         >
-          <p className={`${interFont.className} text-lg text-white mb-5`}>
+          <p className={`${interFont.className} text-2xl text-white mb-5`}>
             🇨🇦 From Vancouver | 🏫 Computer Science student at the University of
             Calgary. Interested in distributed systems, scalable architecture,
             cloud infrastructure, and API design.

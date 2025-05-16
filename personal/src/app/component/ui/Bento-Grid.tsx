@@ -96,7 +96,7 @@ export const BentoGridItem = ({
               alt={img}
               className={cn(
                 imgClassName,
-                "xs:opacity-30 lg:opacity-100 md:opacity-100 sm:opacity-100 object-cover object-center"
+                "xs:opacity-50 lg:opacity-100 md:opacity-80 sm:opacity-100 object-cover object-center mr-16"
               )}
             />
           )}
