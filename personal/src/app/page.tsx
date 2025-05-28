@@ -18,7 +18,7 @@ export default function Home() {
       <RecentProjects />
       <div className=" px-2 space-y-16 mx-8 gap-12">
         {/* Apply consistent vertical spacing */}
-        <div className="py-4"> </div>
+        <div className="py-4 "> </div>
         <Grid />
       </div>
       <CanvasRevealEffectDemo />
