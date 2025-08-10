@@ -22,7 +22,7 @@ export function ThreeDCardDemo({
   video: string;
   githublink: string; // Optional
   imgtechstack?: string[]; // Optional
-  learnMorelink: string; // Optional
+  learnMorelink?: string; // Optional
 }) {
   const [isHovering, setIsHovering] = useState(false);
   const videoRef = useRef<HTMLVideoElement | null>(null);
