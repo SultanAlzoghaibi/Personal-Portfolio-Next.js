@@ -62,6 +62,68 @@ export const gridItems = [
 ];
 
 export const myProjects = [
+
+
+  {
+    id: 4,
+    idd: 4,
+    title: "Anonymous Slack Team Health Bot Platform",
+    des: "A distributed platform integrated with Slack that enables organizations to create teams and collect anonymous health surveys for measuring team morale",
+    video: "/videos/100k-load-mini.mp4", // Update with actual demo video
+    githublink: "https://github.com/SultanAlzoghaibi/TeamHealthBot", // Add your GitHub link
+    imgtechstack: [
+      "/tech-logos/springBoot.png",
+      "/tech-logos/EKS.png",
+      "/tech-logos/grpc.png",
+      "/tech-logos/postgresql.png",
+      "/tech-logos/redis.png",
+      "/tech-logos/cpp.png",
+      "/tech-logos/terraform.png",
+    ],
+    projectInfo: [
+      {
+        description:
+          "Performed extensive research on scalability techniques, microservice decoupling, and system design through YouTube tutorials and technical articles to establish best practices for the platform architecture",
+        link: "",
+        photo1: "/zmyprojectsImg/myprojectsImg4/1.png",
+        photo2: "",
+      },
+      {
+        description:
+          "Created comprehensive system design diagrams to visualize and coordinate the integration between Redis caching layers and PostgreSQL database, ensuring efficient data flow and storage",
+        link: "",
+        photo1: "/zmyprojectsImg/myprojectsImg4/2.png",
+        photo2: "",
+      },
+      {
+        description:
+          "Built with Spring Boot and focused on high-performance computing, requiring extensive debugging of CPU-related issues through YAML configurations and performance monitoring",
+        link: "",
+        photo1: "/zmyprojectsImg/myprojectsImg4/3.png",
+        photo2: "",
+      },
+      {
+        description:
+          "Managed complex Redis cache coordination with PostgreSQL by implementing separate Spring Boot Redis services for each cache type, simplifying data synchronization and error handling",
+        link: "",
+        photo1: "/zmyprojectsImg/myprojectsImg4/4.png",
+        photo2: "",
+      },
+      {
+        description:
+          "Achieved impressive performance metrics: 2,430 RPS across 109,480 requests with 417ms P95 latency, demonstrating the system's robust scalability",
+        link: "",
+        photo1: "/zmyprojectsImg/myprojectsImg4/5.png",
+        photo2: "",
+      },
+      {
+        description: "Learn more by clicking the button below.",
+        link: "https://github.com/SultanAlzoghaibi/TeamHealthBot", // Add your project documentation link
+        photo1: "",
+        photo2: "https://www.youtube.com/embed/HSNjJL2JbJE", // Add your demo video link
+      },
+    ],
+  },
   {
     id: 3,
     idd: 3,
@@ -244,3 +306,4 @@ export const myProjects = [
     ],
   },
 ];
+
