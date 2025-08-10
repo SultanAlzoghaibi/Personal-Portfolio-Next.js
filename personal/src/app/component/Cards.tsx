@@ -16,7 +16,7 @@ const Cards = () => {
             description={project.des}
             video={project.video}
             githublink={project.githublink}
-            learnMorelink={project.learnMorelink} // Pass the learnMorelink
+           // Pass the learnMorelink
             imgtechstack={project.imgtechstack}
           />
         ))}
