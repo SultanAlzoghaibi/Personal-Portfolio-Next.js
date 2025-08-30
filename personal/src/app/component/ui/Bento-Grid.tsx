@@ -57,6 +57,27 @@ const rightLists = [
   { name: "API", icon: "/tech-logos/api.png" },
 ];
 
+// Extra rows sourced from imgtechstack arrays in data
+const extraLists1 = [
+  { name: "Go", icon: "/tech-logos/go.png" },
+  { name: "GKE", icon: "/tech-logos/gke.svg" },
+  { name: "Kubernetes", icon: "/tech-logos/k8s.png" },
+  { name: "MySQL", icon: "/tech-logos/mysql.png" },
+  { name: "Terraform", icon: "/tech-logos/terraform.png" },
+  { name: "JavaScript", icon: "/tech-logos/javascript.png" },
+];
+
+const extraLists2 = [
+  { name: "Spring Boot", icon: "/tech-logos/springBoot.png" },
+  { name: "EKS", icon: "/tech-logos/EKS.png" },
+  { name: "Kubernetes", icon: "/tech-logos/k8s.png" },
+  { name: "gRPC", icon: "/tech-logos/grpc.png" },
+  { name: "PostgreSQL", icon: "/tech-logos/postgreSQL.png" },
+  { name: "Redis", icon: "/tech-logos/redis.png" },
+  { name: "C++", icon: "/tech-logos/cpp.png" },
+  { name: "Terraform", icon: "/tech-logos/terraform.png" },
+];
+
 export const BentoGridItem = ({
   className,
   id,
@@ -210,39 +231,57 @@ export const BentoGridItem = ({
             </div>
 
             {id === 1 && (
-              <div className=" flex gap-1 lg:gap-2 w-fit absolute -right-0 xs:mt-100 sm:mt-60 md:mt-0 lg:mt-0">
-                <div className=" flex flex-col gap-2 md:gap-2 lg:gap-4">
-                  {leftLists.map((item, i) => (
-                    <div
-                      key={i}
-                      className="flex items-center justify-between gap-2 lg:py-4 lg:px-3 py-2 px-3 text-xs lg:text-base text-white opacity-50 lg:opacity-90 rounded-lg bg-[#1B1C1E] xs:min-w-[100px] sm:min-w-[120px] md:min-w-[150px]"
-                    >
-                      <span className="flex-1 text-left">{item.name}</span>
-                      <img
-                        src={item.icon}
-                        alt={item.name}
-                        className="w-6 h-6"
-                      />
+              <div className="mt-4 w-full">
+                <p className="mb-2 text-white/80 text-xs lg:text-sm font-semibold">
+                  Tech Stack
+                </p>
+                {(() => {
+                  // Build a unique, ordered list of technologies across all sources
+                  const combined = [
+                    ...leftLists,
+                    ...rightLists,
+                    ...extraLists1,
+                    ...extraLists2,
+                  ];
+                  const uniqueByIcon = Array.from(
+                    new Map(combined.map((t) => [t.icon, t])).values()
+                  );
+
+                  // Evenly split into 4 equal-length columns (trim overflow to keep equal heights)
+                  const COLS = 4;
+                  const itemsPerCol = Math.floor(uniqueByIcon.length / COLS) || 1;
+                  const usable = uniqueByIcon.slice(0, itemsPerCol * COLS);
+                  const columns = Array.from({ length: COLS }, (_, c) =>
+                    usable.slice(c * itemsPerCol, (c + 1) * itemsPerCol)
+                  );
+
+                  return (
+                    <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-3 lg:gap-4">
+                      {columns.map((col, idx) => (
+                        <div key={idx} className="flex flex-col gap-2 lg:gap-3">
+                          {col.map((item, i) => (
+                            <div
+                              key={`${item.icon}-${i}`}
+                              className="flex items-center gap-2 rounded-lg bg-[#1B1C1E]/90 px-3 py-2 w-full overflow-hidden"
+                            >
+                              <img
+                                src={item.icon}
+                                alt={item.name}
+                                className="w-5 h-5 lg:w-6 lg:h-6 shrink-0"
+                              />
+                              <span
+                                className="flex-1 min-w-0 truncate text-left text-white text-xs lg:text-sm"
+                                title={item.name}
+                              >
+                                {item.name}
+                              </span>
+                            </div>
+                          ))}
+                        </div>
+                      ))}
                     </div>
-                  ))}
-                  <span className="lg:py-4 lg:px-3 py-3 px-2 rounded-lg bg-[#1B1C1E]"></span>
-                </div>
-                <div className="flex flex-col gap-2 md:gap-2 lg:gap-4">
-                  <span className="lg:py-4 lg:px-3 py-4 px-3 rounded-lg bg-[#1B1C1E]"></span>
-                  {rightLists.map((item, i) => (
-                    <div
-                      key={i}
-                      className="flex items-center justify-between gap-2 lg:py-4 lg:px-3 py-2 px-3 text-xs lg:text-base text-white opacity-50 lg:opacity-90 rounded-lg bg-[#1B1C1E] xs:min-w-[100px] sm:min-w-[120px] md:min-w-[150px]"
-                    >
-                      <span className="flex-1 text-left">{item.name}</span>
-                      <img
-                        src={item.icon}
-                        alt={item.name}
-                        className="w-6 h-6"
-                      />
-                    </div>
-                  ))}
-                </div>
+                  );
+                })()}
               </div>
             )}
             {id === 2 && (
