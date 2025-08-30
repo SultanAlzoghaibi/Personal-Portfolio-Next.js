@@ -66,7 +66,7 @@ export const myProjects = [
     id: 5,
     idd: 5,
     title: "LeetCode or Explode",
-    des: "",
+    des: "Chrome extension + Discord bot: that helps track LC and create social acountability (10+ users).",
     video: "/videos/LCC-DEMO.mp4", // Update with actual demo video
     githublink: "https://github.com/SultanAlzoghaibi/TeamHealthBot", // Add your GitHub link
     imgtechstack: [
