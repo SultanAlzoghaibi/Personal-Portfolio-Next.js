@@ -125,7 +125,7 @@ export const myProjects = [
     id: 4,
     idd: 4,
     title: "Anonymous Slack Team Health Bot Platform",
-    des: "A distributed platform integrated with Slack that enables organizations to create teams and collect anonymous health surveys for measuring team morale",
+    des: "Slack bot that enables organizations to create teams and collect anonymous health surveys for measuring team morale",
     video: "/videos/100k-load-mini.mp4", // Update with actual demo video
     githublink: "https://github.com/SultanAlzoghaibi/TeamHealthBot", // Add your GitHub link
     imgtechstack: [
