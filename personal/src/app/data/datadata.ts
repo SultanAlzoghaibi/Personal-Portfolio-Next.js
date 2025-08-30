@@ -120,7 +120,6 @@ export const myProjects = [
       },
     ],
   },
-
   {
     id: 4,
     idd: 4,
@@ -133,7 +132,7 @@ export const myProjects = [
       "/tech-logos/EKS.png",
       "/tech-logos/k8s.png",
       "/tech-logos/grpc.png",
-      "/tech-logos/postgresql.png",
+      "/tech-logos/postgreSQL.png",
       "/tech-logos/redis.png",
       "/tech-logos/cpp.png",
       "/tech-logos/terraform.png",
