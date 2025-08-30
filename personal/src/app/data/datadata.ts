@@ -62,7 +62,64 @@ export const gridItems = [
 ];
 
 export const myProjects = [
-
+  {
+    id: 5,
+    idd: 5,
+    title: "LeetCode or Explode",
+    des: "",
+    video: "/videos/LCC-DEMO.mp4", // Update with actual demo video
+    githublink: "https://github.com/SultanAlzoghaibi/TeamHealthBot", // Add your GitHub link
+    imgtechstack: [
+      "/tech-logos/go.png",
+      "/tech-logos/gke.svg",
+      "/tech-logos/k8s.png",
+      "/tech-logos/mysql.png",
+      "/tech-logos/terraform.png",
+      "/tech-logos/javascript.png",
+    ],
+    projectInfo: [
+      {
+        description:
+          "In the research and planning phase, I created a MoSCoW analysis to define priorities, mapped out the tech stack (Go, MySQL, GKE, Terraform, etc.), and researched the tools, frameworks, and APIs needed (Chrome Extension, Discord, Google Sheets API, Kubernetes) to validate feasibility before building.",
+        link: "",
+        photo1: "/zmyprojectsImg/myprojectsImg5/1.png",
+        photo2: "",
+      },
+      {
+        description:
+        "In the diagramming stage, I sketched out the full system architecture and designed the database schemas, then mapped how all services would interact across the stack. This included planning the data flows, API endpoints, and deployment topology, which gave me a clear blueprint before attempting deployment on GKE."  ,
+        link: "",
+        photo1: "/zmyprojectsImg/myprojectsImg5/2.png",
+        photo2: "",
+      },
+      {
+        description:"During the coding phase, I built both the JavaScript for the Chrome extension and the Go backend, handling challenges like CORS errors, HTTP requests, and numerous database bugs. I often relied on my schema design to trace and debug issues, which helped keep development organized and efficient.",
+        link: "",
+        photo1: "/zmyprojectsImg/myprojectsImg5/3.png",
+        photo2: "",
+      },
+      {
+        description:
+          "The biggest challenge was architecting a highly available, fault-tolerant backend under a tight deadline, since I anticipated real users. To address this, I designed the system with self-healing, rolling deployments, and blue-green releases, ensuring bugs could be quickly identified and resolved at launch.",
+        link: "",
+        photo1: "/zmyprojectsImg/myprojectsImg5/4.png",
+        photo2: "",
+      },
+      {
+        description:
+        "he highlight of the project was attracting and retaining real users who actively used and enjoyed the product without encountering bugs, among them engineers from Amazon and Uber.",
+        link: "",
+        photo1: "/zmyprojectsImg/myprojectsImg5/5.png",
+        photo2: "",
+      },
+      {
+        description: "Learn more by clicking the button below.",
+        link: "https://github.com/SultanAlzoghaibi/", // Add your project documentation link
+        photo1: "",
+        photo2: "", // Add your demo video link
+      },
+    ],
+  },
 
   {
     id: 4,
@@ -74,6 +131,7 @@ export const myProjects = [
     imgtechstack: [
       "/tech-logos/springBoot.png",
       "/tech-logos/EKS.png",
+      "/tech-logos/k8s.png",
       "/tech-logos/grpc.png",
       "/tech-logos/postgresql.png",
       "/tech-logos/redis.png",
