@@ -19,7 +19,7 @@ export const gridItems = [
   },
   {
     id: 2,
-    title: "Looking for an internship  for Fall 2025",
+    title: "Looking for an internship for Winter & Summer 2026",
     description: "",
     className: "lg:col-span-2 md:col-span-2 md:row-span-4 lg:min-h-[60vh]",
     imgClassName: "w-full h-full",
