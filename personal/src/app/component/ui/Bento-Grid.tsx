@@ -72,7 +72,7 @@ const extraLists2 = [
   { name: "EKS", icon: "/tech-logos/EKS.png" },
   { name: "Kubernetes", icon: "/tech-logos/k8s.png" },
   { name: "gRPC", icon: "/tech-logos/grpc.png" },
-  { name: "PostgreSQL", icon: "/tech-logos/postgreSQL.png" },
+  { name: "PostgreSQL", icon: "/tech-logos/postgres.png" },
   { name: "Redis", icon: "/tech-logos/redis.png" },
   { name: "C++", icon: "/tech-logos/cpp.png" },
   { name: "Terraform", icon: "/tech-logos/terraform.png" },
