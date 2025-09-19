@@ -40,13 +40,13 @@ export const gridItems = [
   },
   {
     id: 4,
-    title: "building a Spring Boot + gRPC distributed system",
-    description: "Currently focusing on",
+    title: "data engineering & apache spark",
+    description: "Currently Learning",
     className:
       "lg:col-span-3 lg:row-span-2 md:col-span-4 md:row-span-3  lg:max-h-[340px] lg:min-h-[300px] md:min-h-[250px]", // Adjusted height for id: 4
     imgClassName: "absolute right-0 bottom-0 md:w-96 w-60",
     titleClassName: "justify-center md:justify-start lg:justify-center",
-    img: "/tech-logos/grpc.png",
+    img: "/tech-logos/Apache_Spark.png",
     spareImg: "test.png",
   },
   {
