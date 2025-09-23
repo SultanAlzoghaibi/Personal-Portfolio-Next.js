@@ -80,34 +80,34 @@ export const myProjects = [
     projectInfo: [
       {
         description:
-          "In the research and planning phase, I created a MoSCoW analysis to define priorities, mapped out the tech stack (Go, MySQL, GKE, Terraform, etc.), and researched the tools, frameworks, and APIs needed (Chrome Extension, Discord, Google Sheets API, Kubernetes) to validate feasibility before building.",
+          "Conducted MoSCoW analysis while reflecting on system design goals: high availability, fault tolerance, and seamless updates",
         link: "",
         photo1: "/zmyprojectsImg/myprojectsImg5/1.png",
         photo2: "",
       },
       {
         description:
-        "In the diagramming stage, I sketched out the full system architecture and designed the database schemas, then mapped how all services would interact across the stack. This included planning the data flows, API endpoints, and deployment topology, which gave me a clear blueprint before attempting deployment on GKE."  ,
+        "Sketched system architecture, database schemas, data flows, API endpoints, and deployment topology to blueprint GKE deployment."  ,
         link: "",
         photo1: "/zmyprojectsImg/myprojectsImg5/2.png",
         photo2: "",
       },
       {
-        description:"During the coding phase, I built both the JavaScript for the Chrome extension and the Go backend, handling challenges like CORS errors, HTTP requests, and numerous database bugs. I often relied on my schema design to trace and debug issues, which helped keep development organized and efficient.",
+        description: "Built the Chrome extension (JavaScript) and Go backend, reviewing schemas to trace issues and handling emergency on-call bug fixes in production.",
         link: "",
         photo1: "/zmyprojectsImg/myprojectsImg5/3.png",
         photo2: "",
       },
       {
         description:
-          "The biggest challenge was architecting a highly available, fault-tolerant backend under a tight deadline, since I anticipated real users. To address this, I designed the system with self-healing, rolling deployments, and blue-green releases, ensuring bugs could be quickly identified and resolved at launch.",
+          "The biggest challenge was architecting a highly available, fault-tolerant backend under tight deadlines. I used self-healing, rolling deployments, and blue-green releases to ensure bugs were quickly caught before prod.",
         link: "",
         photo1: "/zmyprojectsImg/myprojectsImg5/4.png",
         photo2: "",
       },
       {
         description:
-        "he highlight of the project was attracting and retaining real users who actively used and enjoyed the product without encountering bugs, among them engineers from Amazon and Uber.",
+"The highlight was attracting real users—including engineers from Amazon and Uber—who actively used and enjoyed the product without encountering bugs.",
         link: "",
         photo1: "/zmyprojectsImg/myprojectsImg5/5.png",
         photo2: "",
